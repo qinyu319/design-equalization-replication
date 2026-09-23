@@ -1,0 +1,43 @@
+design:
+  name: joint_s180_d005
+  design_class: targeted_replication_extension
+  design_family: joint_anchor
+  dose_center: 0.05
+  dose_spread: 0.0
+  dose_anchor: 0.05
+  strength_anchor: 0.18
+  structural_variant: baseline
+  message_strength_scheme: equal_0.18
+  paired_seed_namespace: strict_dose_span_v1
+  topologies: [BA, ER, WS, SBM]
+  message_conditions:
+    high_quality_ai: 0.18
+    low_quality_ai: 0.18
+    labeled_ai: 0.18
+    human_equivalent: 0.18
+  inoculation_strategies: [none, random, hub]
+  seeding_regimes: [single_shot, burst, continuous]
+  replication_start: 30
+  replications: 30
+simulation:
+  n_agents: 1000
+  n_steps: 50
+  seed_fraction: 0.05
+  seeding_total_fractions:
+    single_shot: 0.05
+    burst: 0.05
+    continuous: 0.05
+  dose_matched: false
+  inoculation_budget_fraction: 0.05
+  sharing_probability: 0.3
+  second_hand_attenuation: 0.7
+  disclosure_lambda: 0.7
+  inoculation_kappa: 0.2
+  noise_scale: 0.3
+  target_position: 0.6
+  activation_threshold: 0.01
+  opinion_reversion_mu: 0.0
+output:
+  dir: outputs/targeted_extensions/joint_s180_d005_reps30_59
+  seed_manifest: seed_manifest.csv
+  version: targeted-extension-v1.0

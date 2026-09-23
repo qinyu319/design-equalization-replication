@@ -1,0 +1,201 @@
+design,outcome,factor,R,corrected_B_total,corrected_B_factor,corrected_q,corrected_tau,corrected_rho,replications,B_total_U,B_factor_U,q_proportion,rho_proportion,tau_proportion,in_sample_B_total,in_sample_B_factor,B_factor_difference,q_difference,source,metric,low,high,valid_draws,nonpositive_denominator_draws,interval,seeding_regime,mean_total_shift,mean_signed_shift,conversion_rate
+C-D1,mean_total_shift,seeding_regime,30.0,2.396717951629677e-06,8.135867355831011e-11,2.42670268336992e-08,0.0007148742266959,2.7839099543936432e-08,30.0,2.3919042786851497e-06,2.1050140587557755e-10,6.263365021148551e-08,7.184734646662856e-08,0.0007116992654152,2.399937123142049e-06,2.030976746428091e-09,-1.2914273231726743e-10,-3.836662337778632e-08,point,,,,,,,,,,
+C-D10,mean_total_shift,seeding_regime,30.0,0.0002282158918054,0.0001798719048332,0.0536507805536941,0.0680704456956157,0.0615481010788704,30.0,0.0002285333413881,0.00018015588854,0.0536044919007709,0.0614899576945944,0.0679989632688172,0.0002285667116291,0.0001801635290112,-2.839837067720292e-07,4.628865292321399e-05,point,,,,,,,,,,
+C-D5,mean_total_shift,seeding_regime,30.0,5.9101222916466375e-05,4.193995824764505e-05,0.0125095216980202,0.0176282490814015,0.0143509059508931,30.0,5.923148881792256e-05,4.203203324318629e-05,0.0125064232083435,0.0143461752312715,0.0176240359853943,5.925144155120876e-05,4.203658265865568e-05,-9.20749955412358e-08,3.098489676747057e-06,point,,,,,,,,,,
+C-D50,mean_total_shift,seeding_regime,30.0,0.0033526428316026,0.0029224606719016,0.8716886404820787,1.0,1.0,30.0,0.0033608356716367,0.0029298424538664,0.8717601037719244,1.0,1.0,0.0033609760803919,0.0029298747309057,-7.381781964722889e-06,-7.146328984564132e-05,point,,,,,,,,,,
+CS-0,mean_total_shift,seeding_regime,30.0,0.0001646435415786,8.101805175959532e-07,0.0002416542883599,0.0491085838391862,0.000277225464618,30.0,0.0001645853533492,8.103381436583885e-07,0.0002411120991416,0.0002765807910896,0.0489715563120813,0.0001646537412011,8.265707996438415e-07,-1.5762606243536802e-10,5.421892183302092e-07,point,,,,,,,,,,
+CS-15,mean_total_shift,seeding_regime,30.0,0.0002081347820816,4.8295679573697246e-05,0.0144052563901091,0.0620808098374657,0.016525690161733,30.0,0.0002084105827184,4.849212694633328e-05,0.0144285920777309,0.0165511039279056,0.062011536141816,0.0002084815827196,4.850872410916597e-05,-1.964473726360369e-07,-2.3335687621773085e-05,point,,,,,,,,,,
+CS-30,mean_total_shift,seeding_regime,30.0,0.0003801313438732,0.0002194347219402,0.0654512672426157,0.1133825948562438,0.0750856030502113,30.0,0.0003807214623321,0.0002199736010543,0.0654520549489396,0.075080351424368,0.113281784511273,0.0003807907518374,0.0002199900138162,-5.388791140366811e-07,-7.877063238487247e-07,point,,,,,,,,,,
+CS-45,mean_total_shift,seeding_regime,30.0,0.0006917499728058,0.000527158282324,0.1572366365289484,0.2063297546297812,0.1803816514598495,30.0,0.0006926847206098,0.0005280080595477,0.157106181657093,0.1802172191378423,0.2061049061266732,0.0006927542035396,0.0005280237737915,-8.49777223614059e-07,0.0001304548718553,point,,,,,,,,,,
+CS-45-R,mean_total_shift,seeding_regime,30.0,0.0008163710452217,0.0006269523600101,0.1870024310673237,0.2435007503711595,0.214528929692033,30.0,0.0008177777724795,0.0006283064589442,0.1869494733844677,0.2144505954970597,0.2433257238314407,0.000817845323414,0.0006283223164495,-1.3540989340735674e-06,5.295768285598634e-05,point,,,,,,,,,,
+D-A95,mean_total_shift,seeding_regime,30.0,0.0004676581556215,5.247474187210881e-06,0.0015651754304834,0.1394894055559205,0.0017955670841573,30.0,0.0004680432328858,5.302804504042676e-06,0.0015778232029595,0.0018099282086122,0.1392639446301385,0.0004681726764757,5.332582173883823e-06,-5.53303168317944e-08,-1.2647772476052054e-05,point,,,,,,,,,,
+E-S,mean_total_shift,seeding_regime,30.0,0.002995361498772,0.0029552047232236,0.8814552792105799,0.893432927163375,1.0112042744105278,30.0,0.0030027078702317,0.0029621960924007,0.8813867685944253,1.0110427912230078,0.8934408473382702,0.0030028484347379,0.0029622284115854,-6.991369177060912e-06,6.85106161545379e-05,point,,,,,,,,,,
+E-SD,mean_total_shift,seeding_regime,60.0,6.119751035174594e-08,8.54070799363703e-11,2.547455372558853e-08,1.8253513250766543e-05,2.9224372720401734e-08,60.0,6.148217537319391e-08,9.512207785258776e-11,2.830310290245861e-08,3.246661871769192e-08,1.829371661699013e-05,6.523257566520047e-08,9.45783969691987e-10,-9.714997916217462e-12,-2.828549176870075e-09,point,,,,,,,,,,
+J-S06-D05,mean_total_shift,seeding_regime,60.0,1.0564747110046632e-08,-2.358571707885977e-11,-7.0349626439585204e-09,3.1511698802095462e-06,-8.070499393072171e-09,60.0,1.0541267617763005e-08,-2.4680789774977408e-11,-7.343646695751091e-09,-8.423930693750105e-09,3.136501944062448e-06,1.1264862709763e-08,1.4447410531872402e-10,1.0950726961176444e-12,3.0868405179257045e-10,point,,,,,,,,,,
+J-S06-D50,mean_total_shift,seeding_regime,30.0,1.278625241268361e-06,7.125043391438272e-08,2.1252020418865714e-05,0.0003813783052628,2.4380288364332128e-05,30.0,1.27608427928607e-06,7.069068501177974e-08,2.103366302862212e-05,2.4127811008572017e-05,0.0003796925538655,1.2879189740324414e-06,7.34717430729952e-08,5.597489026029661e-10,2.183573902435933e-07,point,,,,,,,,,,
+J-S06-D95,mean_total_shift,seeding_regime,30.0,5.08931634569588e-06,4.6708398025969083e-07,0.0001393181450337,0.0015180013503744,0.0001598255828557,30.0,5.124806545862816e-06,4.709286843836448e-07,0.0001401224964249,0.0001607351561727,0.0015248607925442,5.148598680043095e-06,4.765727261372674e-07,-3.844704123953985e-09,-8.043513911159129e-07,point,,,,,,,,,,
+J-S14-D50,mean_total_shift,seeding_regime,30.0,7.810155646236905e-06,6.603304534225147e-07,0.000196958186896,0.0023295519500666,0.0002259501589777,30.0,7.836776282002254e-06,6.750341498274683e-07,0.000200853066255,0.0002303994704345,0.0023317939487906,7.900004277958707e-06,6.902513846473349e-07,-1.4703696404953541e-08,-3.894879358943112e-06,point,,,,,,,,,,
+J-S14-D95,mean_total_shift,seeding_regime,30.0,3.2761224801352006e-05,4.363777100653448e-06,0.0013015931967222,0.0097717610991957,0.001493185910972,30.0,3.2892096872360166e-05,4.394358725530404e-06,0.0013075196632242,0.0014998617825785,0.0097868804327293,3.301774322844524e-05,4.423615179042033e-06,-3.0581624876956525e-08,-5.926466501993567e-06,point,,,,,,,,,,
+J-S18-D05,mean_total_shift,seeding_regime,60.0,1.0168594899368922e-07,2.4917884716178363e-10,7.432311155038e-08,3.033008706897702e-05,8.526337054166078e-08,60.0,1.016207651587084e-07,2.561168464778729e-10,7.620629852251724e-08,8.741659338708949e-08,3.02367551071663e-05,1.0776107167136533e-07,1.6608067280207763e-09,-6.9379993160892535e-12,-1.8831869721372427e-09,point,,,,,,,,,,
+J-S18-D50,mean_total_shift,seeding_regime,30.0,1.3438124239532854e-05,1.485331489054733e-06,0.0004430330230985,0.0040082182667544,0.0005082468699529,30.0,1.3474721409360826e-05,1.4824869447075322e-06,0.0004411066441655,0.0005059954478955,0.0040093365834809,1.3579427602626254e-05,1.5071120683204388e-06,2.844544347200721e-09,1.926378933091741e-06,point,,,,,,,,,,
+J-S18-D95,mean_total_shift,seeding_regime,30.0,5.617501317422172e-05,9.640745017774851e-06,0.0028755657855645,0.0167554421976316,0.0032988450830038,30.0,5.646046457619609e-05,9.716462824918782e-06,0.0028910853651427,0.0033163772379966,0.0167995314536458,5.665928751618845e-05,9.762093077441376e-06,-7.57178071439294e-08,-1.5519579578120602e-05,point,,,,,,,,,,
+NC-NoOp,mean_total_shift,seeding_regime,30.0,0.0033526428316026,0.0029224606719016,0.8716886404820787,1.0,1.0,30.0,0.0033608356716367,0.0029298424538664,0.8717601037719244,1.0,1.0,0.0033609760803919,0.0029298747309057,-7.381781964722889e-06,-7.146328984564132e-05,point,,,,,,,,,,
+PC-M01,mean_total_shift,seeding_regime,30.0,8.037353138211741e-05,6.92004095374752e-06,0.0020640555231586,0.0239731863545087,0.0023678816349116,30.0,8.040186822155756e-05,6.952796584019164e-06,0.0020687701700789,0.0023730957187966,0.023923177470442,8.043342767532898e-05,6.960350008100398e-06,-3.275563027164443e-08,-4.714646920288886e-06,point,,,,,,,,,,
+PC-M05,mean_total_shift,seeding_regime,30.0,2.960758099504661e-05,2.3168116805263628e-05,0.0069104041107143,0.0088311169671759,0.0079276060164012,30.0,2.962449512623758e-05,2.31937567816964e-05,0.0069011873973597,0.0079163836100089,0.0088146217252599,2.962914705866462e-05,2.3194836054581392e-05,-2.563997643277325e-08,9.216713354609147e-06,point,,,,,,,,,,
+S-A06,mean_total_shift,seeding_regime,30.0,0.0005247610987782,0.0005165063635939,0.1540594657818068,0.1565216234284683,0.1767368055830184,30.0,0.0005259733522689,0.0005177062007779,0.1540409146293671,0.1767010373184826,0.1565007645889492,0.0005260030613287,0.0005177129793077,-1.199837183995861e-06,1.8551152439705287e-05,point,,,,,,,,,,
+S-A18,mean_total_shift,seeding_regime,30.0,0.0047575921926229,0.0046980993482725,1.401312213751918,1.4190572726020978,1.607583429075015,30.0,0.0047641873243067,0.0047046839626005,1.399855399746279,1.6057805280253097,1.417560330162358,0.0047643886007656,0.0047047289011137,-6.584614327929256e-06,0.001456814005639,point,,,,,,,,,,
+C-D1,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,-9.285218205774571e-10,1.17310503015417e-09,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+C-D1,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,-2.7686892458053524e-07,3.504793492464773e-07,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+C-D1,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,0.0007036400899803,0.0007256179169153,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+C-D1,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,-3.1740084667596217e-07,4.017065250309987e-07,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+C-D10,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,0.0001789543006761,0.0001808298096107,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+C-D10,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,0.0533905949218859,0.0539156035877194,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+C-D10,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,0.067717572807972,0.06843021738137,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+C-D10,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,0.0612481181988353,0.0618513320447424,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+C-D5,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,4.158308732376587e-05,4.228467488193186e-05,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+C-D5,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,0.0124077110806861,0.0126124623462322,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+C-D5,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,0.0174856359384756,0.017763340464524,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+C-D5,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,0.014234596221213,0.0144677177716372,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+C-D50,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,0.0029143071344804,0.0029303166551075,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+C-D50,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,0.8710545014593816,0.872358058391837,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+C-D50,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,1.0,1.0,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+C-D50,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,1.0,1.0,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+CS-0,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,7.32219084217746e-07,8.796736056847934e-07,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+CS-0,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,0.0002183048655161,0.0002627041768424,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+CS-0,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,0.0488280900055733,0.0493989668970568,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+CS-0,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,0.000250471531492,0.0003015460128861,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+CS-15,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,4.775827940733808e-05,4.8861370068992925e-05,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+CS-15,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,0.0142534266266093,0.0145608997665818,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+CS-15,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,0.0618224354769394,0.0623627619362931,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+CS-15,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,0.0163505316775705,0.0166986876114703,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+CS-30,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,0.0002181538748031,0.000220660315572,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+CS-30,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,0.0650970032785043,0.0658046121231029,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+CS-30,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,0.1128968814864786,0.1138789491743253,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+CS-30,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,0.0746842911021632,0.0754722418185859,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+CS-45,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,0.0005253115207142,0.0005291647626196,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+CS-45,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,0.1566979540210676,0.1578183572657754,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+CS-45,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,0.2056502366204269,0.2070680750411125,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+CS-45,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,0.1797828881417317,0.1810128112580547,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+CS-45-R,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,0.0006250291749987,0.0006288795625321,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+CS-45-R,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,0.1862185291142289,0.1877276507751551,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+CS-45-R,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,0.2424051649391825,0.2445385754575292,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+CS-45-R,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,0.2136625562878996,0.2153838930966519,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+D-A95,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,4.998697728257232e-06,5.491931636704926e-06,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+D-A95,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,0.0014903494877205,0.0016410982262286,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+D-A95,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,0.1387907574801608,0.1401662188558815,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+D-A95,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,0.0017094972997846,0.0018817444774533,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+E-S,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,0.0029479725571374,0.0029623170178541,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+E-S,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,0.8789060879739178,0.8842458430621154,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+E-S,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,0.8908697006944639,0.8960865491811917,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+E-S,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,1.0088111479159736,1.0137026329812582,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+E-SD,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,-3.458943493345945e-10,6.050393419940971e-10,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+E-SD,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,-1.033903637924593e-07,1.806554778518429e-07,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+E-SD,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,1.6854202965161928e-05,1.967410700344713e-05,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+E-SD,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,-1.1858618549961873e-07,2.0723639106727838e-07,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S06-D05,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,-9.576136403302542e-11,6.523047927206397e-11,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S06-D05,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,-2.853828306208193e-08,1.9480302963560706e-08,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S06-D05,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,2.9133447761800503e-06,3.4195362100849844e-06,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S06-D05,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,-3.27329776535513e-08,2.2342596253816964e-08,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S06-D50,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,6.263423699357519e-08,7.950681400020641e-08,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S06-D50,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,1.8664764828704543e-05,2.3721772205714908e-05,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S06-D50,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,0.0003726082464262,0.0003909580578781,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S06-D50,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,2.1411878719384144e-05,2.721626736790708e-05,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S06-D95,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,4.343052872683743e-07,4.95057582307834e-07,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S06-D95,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,0.0001295553447514,0.0001478155171912,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S06-D95,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,0.0014927737166808,0.0015425111101711,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S06-D95,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,0.0001486759013337,0.0001695814895517,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S14-D50,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,5.952669782285438e-07,7.234674390390975e-07,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S14-D50,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,0.0001774788318544,0.0002159294002236,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S14-D50,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,0.0022724813766924,0.002382404536227,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S14-D50,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,0.0002035564878252,0.0002477777596728,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S14-D95,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,4.16951298894827e-06,4.5535480748438526e-06,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S14-D95,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,0.0012421550030477,0.0013603775205226,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S14-D95,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,0.0096437852232442,0.0099207987690783,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S14-D95,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,0.0014252933549518,0.0015605176370145,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S18-D05,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,-4.935406310657656e-10,1.109632940356516e-09,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S18-D05,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,-1.471281457282191e-07,3.303634994725993e-07,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S18-D05,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,2.809722704079151e-05,3.269587270405438e-05,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S18-D05,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,-1.6877004876863829e-07,3.7926932645734826e-07,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S18-D50,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,1.3499686240245026e-06,1.6077716805954295e-06,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S18-D50,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,0.0004020645707508,0.0004796830089771,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S18-D50,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,0.0039001355944165,0.0041000744737517,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S18-D50,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,0.0004610904605794,0.0005502467622064,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S18-D95,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,9.22758109655023e-06,1.0032013173873838e-05,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S18-D95,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,0.0027512142121924,0.0029948938552546,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S18-D95,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,0.0164716067363463,0.0170045877365232,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+J-S18-D95,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,0.0031535940475361,0.0034363894729957,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+NC-NoOp,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,0.0029143071344804,0.0029303166551075,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+NC-NoOp,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,0.8710545014593816,0.872358058391837,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+NC-NoOp,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,1.0,1.0,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+NC-NoOp,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,1.0,1.0,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+PC-M01,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,6.737474199075858e-06,7.086084219048095e-06,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+PC-M01,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,0.0020130842304629,0.0021106659550218,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+PC-M01,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,0.0238303197694859,0.0241156723878623,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+PC-M01,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,0.0023092873556177,0.0024227826464644,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+PC-M05,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,2.30261547268199e-05,2.3314780012169005e-05,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+PC-M05,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,0.0068689771563906,0.0069548711962221,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+PC-M05,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,0.0087789054312093,0.0088879136522985,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+PC-M05,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,0.0078812053387449,0.0079761635458241,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+S-A06,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,0.0005148493103866,0.0005181402785572,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+S-A06,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,0.1536354865742165,0.1545105934439455,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+S-A06,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,0.1560918144342587,0.1569809581241848,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+S-A06,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,0.1763200033858054,0.1771547225646111,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+S-A18,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,B_factor,0.0046868601976284,0.0047094439057108,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+S-A18,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,q,1.398547907652554,1.404341817934616,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+S-A18,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,tau,1.4161480527671642,1.4223141608308296,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+S-A18,mean_total_shift,seeding_regime,,,,,,,,,,,,,,,,,sensitivity_range,rho,1.604975832486295,1.610324379960003,1000.0,0.0,2.5-97.5 percentile sensitivity range; not calibrated CI,,,,
+C-D1,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.0042010668374102,0.0022497851706735,0.0027114085602243
+C-D1,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.0041997270843264,0.0022632883721458,0.0027358744479791
+C-D1,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.004239153549605,0.0022643142523452,0.0026424273935312
+C-D10,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.0119925907490716,0.0066875927817689,0.0078122108449917
+C-D10,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.0348768975590931,0.0218933110041347,0.0243051121246948
+C-D10,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.004239153549605,0.0022643142523452,0.0026424273935312
+C-D5,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.0081958906700331,0.0044658300276545,0.0053290127292019
+C-D5,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.0190837315569306,0.0110506350210342,0.0126124732465173
+C-D5,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.004239153549605,0.0022643142523452,0.0026424273935312
+C-D50,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.0191705208551019,0.0111384506598538,0.0128304989523113
+C-D50,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.1225430637905298,0.0977306216486615,0.1249573098598343
+C-D50,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.004239153549605,0.0022643142523452,0.0026424273935312
+CS-0,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.0351501022056395,0.0219253232047417,0.0243705745669708
+CS-0,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.0348768975590931,0.0218933110041347,0.0243051121246948
+CS-0,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.0368244325820536,0.0225556996112977,0.0251994562921168
+CS-15,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.0351501022056395,0.0219253232047417,0.0243705745669708
+CS-15,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.0432874112582501,0.0281099133559464,0.0307741280941758
+CS-15,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.0267459896303816,0.0157354165713076,0.0177982119302401
+CS-30,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.0351501022056395,0.0219253232047417,0.0243705745669708
+CS-30,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.0512005707083378,0.0343265069749778,0.0376656378951719
+CS-30,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.0160121060276455,0.0089926604054225,0.0107656013954828
+CS-45,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.0351501022056395,0.0219253232047417,0.0243705745669708
+CS-45,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.0586609510986956,0.0403440178284973,0.0440715704164051
+CS-45,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.004239153549605,0.0022643142523452,0.0026424273935312
+CS-45-R,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.0351501022056395,0.0219253232047417,0.0243705745669708
+CS-45-R,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.0041997270843264,0.0022632883721458,0.0027358744479791
+CS-45-R,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.063638135685933,0.0428120191566353,0.0468646873362025
+D-A95,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.0594445052563863,0.0408948085657529,0.0446237017245465
+D-A95,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.0586609510986956,0.0403440178284973,0.0440715704164051
+D-A95,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.063638135685933,0.0428120191566353,0.0468646873362025
+E-S,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.0194161620622425,0.0114660733710123,0.0129981656838196
+E-S,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.1260840093971367,0.1016885355655717,0.1237033388174628
+E-S,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.0042681338362661,0.0023222473831823,0.0027147480377174
+E-SD,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.0042308318249942,0.0023064742798121,0.0027922232752438
+E-SD,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.0042353067084984,0.0023267229586642,0.0027419936343264
+E-SD,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.0042626901213255,0.002326680893983,0.0027333857854111
+J-S06-D05,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.0016105342674977,0.0008793327532354,0.0010525231485691
+J-S06-D05,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.0016086907722552,0.000878600271033,0.0010670604239549
+J-S06-D05,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.0016187302549517,0.000882887672112,0.0010248969480248
+J-S06-D50,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.0139294249129243,0.0087157713597338,0.0095621769363149
+J-S06-D50,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.013855082186135,0.0087204042710813,0.0096557914561081
+J-S06-D50,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.0144555173969832,0.0087777120215401,0.0098674553896429
+J-S06-D95,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.023980797395884,0.0163775762069225,0.0170426381608308
+J-S06-D95,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.023811577004309,0.0163405056792167,0.0170128222901438
+J-S06-D95,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.0253384992425219,0.0167272413798616,0.0179227660932833
+J-S14-D50,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.0356729180081604,0.0226825627638637,0.0248477707277074
+J-S14-D50,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.0353727522666215,0.0225677012574332,0.0247835367343394
+J-S14-D50,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.0372223171875257,0.0231836676643304,0.0256081001153825
+J-S14-D95,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.0605474293176688,0.0421889547067337,0.0446383739370913
+J-S14-D95,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.0597625248654722,0.0417260489631065,0.0444406344388098
+J-S14-D95,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.0645186993428893,0.0440066317589802,0.0468112461439765
+J-S18-D05,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.0055451832995995,0.0030320995096733,0.0036166522219884
+J-S18-D05,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.0055461821678543,0.0030408032401857,0.0036113994309874
+J-S18-D05,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.0055859336371624,0.0030463451033631,0.0035621611925838
+J-S18-D50,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.0463383561436832,0.0294263428669632,0.032628244522749
+J-S18-D50,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.0459259592410181,0.0293511204426976,0.0325893135909409
+J-S18-D50,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.0486873381583097,0.0304431517788851,0.0338547836137121
+J-S18-D95,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.078313023040099,0.05476098696649,0.0608309348512051
+J-S18-D95,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.0771443020708639,0.053913402663069,0.0601714382832868
+J-S18-D95,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.0842042898606901,0.0577621228195919,0.0639535769916957
+NC-NoOp,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.0191705208551019,0.0111384506598538,0.0128304989523113
+NC-NoOp,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.1225430637905298,0.0977306216486615,0.1249573098598343
+NC-NoOp,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.004239153549605,0.0022643142523452,0.0026424273935312
+PC-M01,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.021706615611059,0.0135434787402765,0.0149783382089377
+PC-M01,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.0273868300127891,0.0171507483326477,0.0188922887446234
+PC-M01,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.0222790051310396,0.0136463351133669,0.0151667093216879
+PC-M05,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.0030101270314395,0.0018779386691289,0.0019849756893845
+PC-M05,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.012814683899924,0.0077621643137924,0.0086564222837597
+PC-M05,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.0028334550546051,0.0017355477489403,0.0018066514770341
+S-A06,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.0074615702429957,0.004356803825179,0.0050848409653011
+S-A06,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.0523213084303633,0.0416229220659709,0.0406678257112416
+S-A06,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.0016196878494364,0.0008810976001208,0.0010603329496226
+S-A18,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,burst,0.0253216162196368,0.0149806930223428,0.01703239709918
+S-A18,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,continuous,0.1594743768091123,0.1285241651937749,0.1789777433366417
+S-A18,,,,,,,,,,,,,,,,,,,endpoint,,,,,,,single_shot,0.005600004584301,0.0030486825684435,0.0034967394172426

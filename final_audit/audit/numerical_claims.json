@@ -1,0 +1,1608 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "E1/0.0/mean_total_shift/topology",
+      "max_abs_difference": 1.0649189380456683e-18
+    },
+    {
+      "check": "E1/0.0/mean_total_shift/dose",
+      "max_abs_difference": 8.239936510889834e-18
+    },
+    {
+      "check": "E1/0.0/mean_total_shift/seeding_regime",
+      "max_abs_difference": 5.93558337788451e-19
+    },
+    {
+      "check": "E1/0.0/mean_total_shift/strength",
+      "max_abs_difference": 9.977370492297855e-17
+    },
+    {
+      "check": "E1/0.0/0.05/mean_total_shift/paired_mean",
+      "max_abs_difference": 2.710505431213761e-20
+    },
+    {
+      "check": "E1/0.0/0.5/mean_total_shift/paired_mean",
+      "max_abs_difference": 8.239936510889834e-17
+    },
+    {
+      "check": "E1/0.0/0.95/mean_total_shift/paired_mean",
+      "max_abs_difference": 9.367506770274758e-17
+    },
+    {
+      "check": "E1/0.0/mean_signed_shift/topology",
+      "max_abs_difference": 6.11372499460393e-19
+    },
+    {
+      "check": "E1/0.0/mean_signed_shift/dose",
+      "max_abs_difference": 7.806255641895632e-17
+    },
+    {
+      "check": "E1/0.0/mean_signed_shift/seeding_regime",
+      "max_abs_difference": 2.923322459211404e-19
+    },
+    {
+      "check": "E1/0.0/mean_signed_shift/strength",
+      "max_abs_difference": 6.636672548326894e-17
+    },
+    {
+      "check": "E1/0.0/0.05/mean_signed_shift/paired_mean",
+      "max_abs_difference": 6.235517744507257e-17
+    },
+    {
+      "check": "E1/0.0/0.5/mean_signed_shift/paired_mean",
+      "max_abs_difference": 7.3075226425523e-17
+    },
+    {
+      "check": "E1/0.0/0.95/mean_signed_shift/paired_mean",
+      "max_abs_difference": 9.454242944073599e-17
+    },
+    {
+      "check": "E1/0.0/conversion_rate/topology",
+      "max_abs_difference": 7.080930741249934e-19
+    },
+    {
+      "check": "E1/0.0/conversion_rate/dose",
+      "max_abs_difference": 7.773729576721067e-17
+    },
+    {
+      "check": "E1/0.0/conversion_rate/seeding_regime",
+      "max_abs_difference": 2.599332356886634e-19
+    },
+    {
+      "check": "E1/0.0/conversion_rate/strength",
+      "max_abs_difference": 7.518942066186973e-17
+    },
+    {
+      "check": "E1/0.0/0.05/conversion_rate/paired_mean",
+      "max_abs_difference": 6.892815311576594e-17
+    },
+    {
+      "check": "E1/0.0/0.5/conversion_rate/paired_mean",
+      "max_abs_difference": 8.413408858487514e-17
+    },
+    {
+      "check": "E1/0.0/0.95/conversion_rate/paired_mean",
+      "max_abs_difference": 8.109832250191573e-17
+    },
+    {
+      "check": "E1/0.0/mean_trajectory_shift/topology",
+      "max_abs_difference": 8.393699460596091e-19
+    },
+    {
+      "check": "E1/0.0/mean_trajectory_shift/dose",
+      "max_abs_difference": 3.7947076036992655e-17
+    },
+    {
+      "check": "E1/0.0/mean_trajectory_shift/seeding_regime",
+      "max_abs_difference": 4.2012834183813297e-19
+    },
+    {
+      "check": "E1/0.0/mean_trajectory_shift/strength",
+      "max_abs_difference": 7.090682208055199e-17
+    },
+    {
+      "check": "E1/0.0/0.05/mean_trajectory_shift/paired_mean",
+      "max_abs_difference": 5.5077470362263625e-17
+    },
+    {
+      "check": "E1/0.0/0.5/mean_trajectory_shift/paired_mean",
+      "max_abs_difference": 8.326672684688674e-17
+    },
+    {
+      "check": "E1/0.0/0.95/mean_trajectory_shift/paired_mean",
+      "max_abs_difference": 9.367506770274758e-17
+    },
+    {
+      "check": "E1/0.05/mean_total_shift/topology",
+      "max_abs_difference": 5.910908580212053e-20
+    },
+    {
+      "check": "E1/0.05/mean_total_shift/dose",
+      "max_abs_difference": 4.743384504624082e-20
+    },
+    {
+      "check": "E1/0.05/mean_total_shift/seeding_regime",
+      "max_abs_difference": 3.049318610115481e-20
+    },
+    {
+      "check": "E1/0.05/mean_total_shift/strength",
+      "max_abs_difference": 3.7269449679189215e-20
+    },
+    {
+      "check": "E1/0.05/0.05/mean_total_shift/paired_mean",
+      "max_abs_difference": 8.608565249534905e-17
+    },
+    {
+      "check": "E1/0.05/0.5/mean_total_shift/paired_mean",
+      "max_abs_difference": 7.979727989493313e-17
+    },
+    {
+      "check": "E1/0.05/0.95/mean_total_shift/paired_mean",
+      "max_abs_difference": 4.5102810375396984e-17
+    },
+    {
+      "check": "E1/0.05/mean_signed_shift/topology",
+      "max_abs_difference": 3.001921161016193e-20
+    },
+    {
+      "check": "E1/0.05/mean_signed_shift/dose",
+      "max_abs_difference": 1.8634724839594607e-20
+    },
+    {
+      "check": "E1/0.05/mean_signed_shift/seeding_regime",
+      "max_abs_difference": 1.0164395367051604e-20
+    },
+    {
+      "check": "E1/0.05/mean_signed_shift/strength",
+      "max_abs_difference": 1.7787691892340307e-20
+    },
+    {
+      "check": "E1/0.05/0.05/mean_signed_shift/paired_mean",
+      "max_abs_difference": 6.743737512859838e-17
+    },
+    {
+      "check": "E1/0.05/0.5/mean_signed_shift/paired_mean",
+      "max_abs_difference": 8.673617379884035e-17
+    },
+    {
+      "check": "E1/0.05/0.95/mean_signed_shift/paired_mean",
+      "max_abs_difference": 7.979727989493313e-17
+    },
+    {
+      "check": "E1/0.05/conversion_rate/topology",
+      "max_abs_difference": 2.6985113123317422e-20
+    },
+    {
+      "check": "E1/0.05/conversion_rate/dose",
+      "max_abs_difference": 2.0328790734103208e-20
+    },
+    {
+      "check": "E1/0.05/conversion_rate/seeding_regime",
+      "max_abs_difference": 1.5246593050577406e-20
+    },
+    {
+      "check": "E1/0.05/conversion_rate/strength",
+      "max_abs_difference": 2.286988957586611e-20
+    },
+    {
+      "check": "E1/0.05/0.05/conversion_rate/paired_mean",
+      "max_abs_difference": 9.085614205428527e-17
+    },
+    {
+      "check": "E1/0.05/0.5/conversion_rate/paired_mean",
+      "max_abs_difference": 6.938893903907228e-17
+    },
+    {
+      "check": "E1/0.05/0.95/conversion_rate/paired_mean",
+      "max_abs_difference": 8.153200337090993e-17
+    },
+    {
+      "check": "E1/0.05/mean_trajectory_shift/topology",
+      "max_abs_difference": 1.2118857718391898e-19
+    },
+    {
+      "check": "E1/0.05/mean_trajectory_shift/dose",
+      "max_abs_difference": 5.421010862427522e-20
+    },
+    {
+      "check": "E1/0.05/mean_trajectory_shift/seeding_regime",
+      "max_abs_difference": 5.929230630780102e-20
+    },
+    {
+      "check": "E1/0.05/mean_trajectory_shift/strength",
+      "max_abs_difference": 4.743384504624082e-20
+    },
+    {
+      "check": "E1/0.05/0.05/mean_trajectory_shift/paired_mean",
+      "max_abs_difference": 9.405453846311751e-17
+    },
+    {
+      "check": "E1/0.05/0.5/mean_trajectory_shift/paired_mean",
+      "max_abs_difference": 2.3418766925686896e-17
+    },
+    {
+      "check": "E1/0.05/0.95/mean_trajectory_shift/paired_mean",
+      "max_abs_difference": 7.112366251504909e-17
+    },
+    {
+      "check": "E3/0.2/mean_total_shift/topology",
+      "max_abs_difference": 8.07622960944977e-21
+    },
+    {
+      "check": "E3/0.2/mean_total_shift/dose",
+      "max_abs_difference": 5.505714157152952e-21
+    },
+    {
+      "check": "E3/0.2/mean_total_shift/seeding_regime",
+      "max_abs_difference": 2.541098841762901e-21
+    },
+    {
+      "check": "E3/0.2/mean_total_shift/strength",
+      "max_abs_difference": 4.0234064994579266e-21
+    },
+    {
+      "check": "E3/0.2/0.05/mean_total_shift/paired_mean",
+      "max_abs_difference": 5.952269926945419e-17
+    },
+    {
+      "check": "E3/0.2/0.5/mean_total_shift/paired_mean",
+      "max_abs_difference": 8.326672684688674e-17
+    },
+    {
+      "check": "E3/0.2/0.95/mean_total_shift/paired_mean",
+      "max_abs_difference": 6.071532165918825e-17
+    },
+    {
+      "check": "E3/0.2/mean_signed_shift/topology",
+      "max_abs_difference": 3.3279543994539686e-21
+    },
+    {
+      "check": "E3/0.2/mean_signed_shift/dose",
+      "max_abs_difference": 3.1763735522036263e-21
+    },
+    {
+      "check": "E3/0.2/mean_signed_shift/seeding_regime",
+      "max_abs_difference": 1.6940658945086007e-21
+    },
+    {
+      "check": "E3/0.2/mean_signed_shift/strength",
+      "max_abs_difference": 2.117582368135751e-21
+    },
+    {
+      "check": "E3/0.2/0.05/mean_signed_shift/paired_mean",
+      "max_abs_difference": 7.464731957562698e-17
+    },
+    {
+      "check": "E3/0.2/0.5/mean_signed_shift/paired_mean",
+      "max_abs_difference": 8.239936510889834e-17
+    },
+    {
+      "check": "E3/0.2/0.95/mean_signed_shift/paired_mean",
+      "max_abs_difference": 8.239936510889834e-17
+    },
+    {
+      "check": "E3/0.2/conversion_rate/topology",
+      "max_abs_difference": 2.541098841762901e-20
+    },
+    {
+      "check": "E3/0.2/conversion_rate/dose",
+      "max_abs_difference": 3.7269449679189215e-20
+    },
+    {
+      "check": "E3/0.2/conversion_rate/seeding_regime",
+      "max_abs_difference": 2.0328790734103208e-20
+    },
+    {
+      "check": "E3/0.2/conversion_rate/strength",
+      "max_abs_difference": 2.710505431213761e-20
+    },
+    {
+      "check": "E3/0.2/0.05/conversion_rate/paired_mean",
+      "max_abs_difference": 8.974483482748763e-17
+    },
+    {
+      "check": "E3/0.2/0.5/conversion_rate/paired_mean",
+      "max_abs_difference": 7.979727989493313e-17
+    },
+    {
+      "check": "E3/0.2/0.95/conversion_rate/paired_mean",
+      "max_abs_difference": 9.627715291671279e-17
+    },
+    {
+      "check": "E3/0.2/mean_trajectory_shift/topology",
+      "max_abs_difference": 1.8621593347370328e-20
+    },
+    {
+      "check": "E3/0.2/mean_trajectory_shift/dose",
+      "max_abs_difference": 1.1858461261560205e-20
+    },
+    {
+      "check": "E3/0.2/mean_trajectory_shift/seeding_regime",
+      "max_abs_difference": 1.874722140290182e-20
+    },
+    {
+      "check": "E3/0.2/mean_trajectory_shift/strength",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E3/0.2/0.05/mean_trajectory_shift/paired_mean",
+      "max_abs_difference": 6.776263578034403e-21
+    },
+    {
+      "check": "E3/0.2/0.5/mean_trajectory_shift/paired_mean",
+      "max_abs_difference": 9.82287168271867e-17
+    },
+    {
+      "check": "E3/0.2/0.95/mean_trajectory_shift/paired_mean",
+      "max_abs_difference": 8.153200337090993e-17
+    },
+    {
+      "check": "E3/0.8/mean_total_shift/topology",
+      "max_abs_difference": 2.6917297237785145e-23
+    },
+    {
+      "check": "E3/0.8/mean_total_shift/dose",
+      "max_abs_difference": 2.6469779601696886e-23
+    },
+    {
+      "check": "E3/0.8/mean_total_shift/seeding_regime",
+      "max_abs_difference": 3.3087224502121107e-23
+    },
+    {
+      "check": "E3/0.8/mean_total_shift/strength",
+      "max_abs_difference": 1.5716431638507526e-23
+    },
+    {
+      "check": "E3/0.8/0.05/mean_total_shift/paired_mean",
+      "max_abs_difference": 6.776263578034403e-21
+    },
+    {
+      "check": "E3/0.8/0.5/mean_total_shift/paired_mean",
+      "max_abs_difference": 9.237402509576498e-17
+    },
+    {
+      "check": "E3/0.8/0.95/mean_total_shift/paired_mean",
+      "max_abs_difference": 8.803721640582296e-17
+    },
+    {
+      "check": "E3/0.8/mean_signed_shift/topology",
+      "max_abs_difference": 1.2808374797500788e-23
+    },
+    {
+      "check": "E3/0.8/mean_signed_shift/dose",
+      "max_abs_difference": 1.819797347616661e-23
+    },
+    {
+      "check": "E3/0.8/mean_signed_shift/seeding_regime",
+      "max_abs_difference": 1.9852334701272664e-23
+    },
+    {
+      "check": "E3/0.8/mean_signed_shift/strength",
+      "max_abs_difference": 1.2407709188295415e-23
+    },
+    {
+      "check": "E3/0.8/0.05/mean_signed_shift/paired_mean",
+      "max_abs_difference": 4.235164736271502e-22
+    },
+    {
+      "check": "E3/0.8/0.5/mean_signed_shift/paired_mean",
+      "max_abs_difference": 8.332093695551102e-17
+    },
+    {
+      "check": "E3/0.8/0.95/mean_signed_shift/paired_mean",
+      "max_abs_difference": 6.163689350580093e-17
+    },
+    {
+      "check": "E3/0.8/conversion_rate/topology",
+      "max_abs_difference": 1.0132962503774589e-23
+    },
+    {
+      "check": "E3/0.8/conversion_rate/dose",
+      "max_abs_difference": 1.2407709188295415e-23
+    },
+    {
+      "check": "E3/0.8/conversion_rate/seeding_regime",
+      "max_abs_difference": 8.271806125530277e-24
+    },
+    {
+      "check": "E3/0.8/conversion_rate/strength",
+      "max_abs_difference": 7.444625512977249e-24
+    },
+    {
+      "check": "E3/0.8/0.05/conversion_rate/paired_mean",
+      "max_abs_difference": 1.3552527156068805e-20
+    },
+    {
+      "check": "E3/0.8/0.5/conversion_rate/paired_mean",
+      "max_abs_difference": 6.998525023393931e-17
+    },
+    {
+      "check": "E3/0.8/0.95/conversion_rate/paired_mean",
+      "max_abs_difference": 9.194034422677078e-17
+    },
+    {
+      "check": "E3/0.8/mean_trajectory_shift/topology",
+      "max_abs_difference": 7.793410580345495e-23
+    },
+    {
+      "check": "E3/0.8/mean_trajectory_shift/dose",
+      "max_abs_difference": 5.293955920339377e-23
+    },
+    {
+      "check": "E3/0.8/mean_trajectory_shift/seeding_regime",
+      "max_abs_difference": 8.200195225820486e-23
+    },
+    {
+      "check": "E3/0.8/mean_trajectory_shift/strength",
+      "max_abs_difference": 6.617444900424222e-24
+    },
+    {
+      "check": "E3/0.8/0.05/mean_trajectory_shift/paired_mean",
+      "max_abs_difference": 2.117582368135751e-22
+    },
+    {
+      "check": "E3/0.8/0.5/mean_trajectory_shift/paired_mean",
+      "max_abs_difference": 8.470329472543003e-22
+    },
+    {
+      "check": "E3/0.8/0.95/mean_trajectory_shift/paired_mean",
+      "max_abs_difference": 8.470329472543003e-22
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C050/0.05/continuous/mean_total_shift",
+      "max_abs_difference": 1.0164395367051604e-19
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C050/0.05/continuous/mean_signed_shift",
+      "max_abs_difference": 4.0657581468206416e-20
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C050/0.05/continuous/conversion_rate",
+      "max_abs_difference": 7.123208273229764e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C050/0.05/continuous/mean_trajectory_shift",
+      "max_abs_difference": 5.082197683525802e-21
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C050/0.05/single_shot/mean_total_shift",
+      "max_abs_difference": 1.3552527156068805e-20
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C050/0.05/single_shot/mean_signed_shift",
+      "max_abs_difference": 3.049318610115481e-20
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C050/0.05/single_shot/conversion_rate",
+      "max_abs_difference": 5.99563801384484e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C050/0.05/single_shot/mean_trajectory_shift",
+      "max_abs_difference": 1.3552527156068805e-20
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C050/0.5/continuous/mean_total_shift",
+      "max_abs_difference": 7.047314121155779e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C050/0.5/continuous/mean_signed_shift",
+      "max_abs_difference": 5.186552142627532e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C050/0.5/continuous/conversion_rate",
+      "max_abs_difference": 5.616167253474913e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C050/0.5/continuous/mean_trajectory_shift",
+      "max_abs_difference": 9.860818758755663e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C050/0.5/single_shot/mean_total_shift",
+      "max_abs_difference": 5.898059818321144e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C050/0.5/single_shot/mean_signed_shift",
+      "max_abs_difference": 5.659535340374333e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C050/0.5/single_shot/conversion_rate",
+      "max_abs_difference": 5.5402731014009277e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C050/0.5/single_shot/mean_trajectory_shift",
+      "max_abs_difference": 6.14742631799281e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C100/0.05/continuous/mean_total_shift",
+      "max_abs_difference": 9.486769009248164e-20
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C100/0.05/continuous/mean_signed_shift",
+      "max_abs_difference": 2.5939536976715694e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C100/0.05/continuous/conversion_rate",
+      "max_abs_difference": 8.42425088021237e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C100/0.05/continuous/mean_trajectory_shift",
+      "max_abs_difference": 2.0328790734103208e-20
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C100/0.05/single_shot/mean_total_shift",
+      "max_abs_difference": 4.0657581468206416e-20
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C100/0.05/single_shot/mean_signed_shift",
+      "max_abs_difference": 9.825582188149884e-20
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C100/0.05/single_shot/conversion_rate",
+      "max_abs_difference": 7.334627696864437e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C100/0.05/single_shot/mean_trajectory_shift",
+      "max_abs_difference": 4.0657581468206416e-20
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C100/0.5/continuous/mean_total_shift",
+      "max_abs_difference": 5.724587470723463e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C100/0.5/continuous/mean_signed_shift",
+      "max_abs_difference": 8.55435514091063e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C100/0.5/continuous/conversion_rate",
+      "max_abs_difference": 6.982261990806649e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C100/0.5/continuous/mean_trajectory_shift",
+      "max_abs_difference": 9.719872476332547e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C100/0.5/single_shot/mean_total_shift",
+      "max_abs_difference": 8.998878031629687e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C100/0.5/single_shot/mean_signed_shift",
+      "max_abs_difference": 6.375108774214766e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C100/0.5/single_shot/conversion_rate",
+      "max_abs_difference": 8.4893030105615e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B05_C100/0.5/single_shot/mean_trajectory_shift",
+      "max_abs_difference": 9.047667129391535e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C050/0.05/continuous/mean_total_shift",
+      "max_abs_difference": 8.613986260397333e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C050/0.05/continuous/mean_signed_shift",
+      "max_abs_difference": 7.979727989493313e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C050/0.05/continuous/conversion_rate",
+      "max_abs_difference": 9.340401715962621e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C050/0.05/continuous/mean_trajectory_shift",
+      "max_abs_difference": 4.404571325722362e-20
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C050/0.05/single_shot/mean_total_shift",
+      "max_abs_difference": 4.0657581468206416e-20
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C050/0.05/single_shot/mean_signed_shift",
+      "max_abs_difference": 4.743384504624082e-20
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C050/0.05/single_shot/conversion_rate",
+      "max_abs_difference": 8.771195575407731e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C050/0.05/single_shot/mean_trajectory_shift",
+      "max_abs_difference": 4.0657581468206416e-20
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C050/0.5/continuous/mean_total_shift",
+      "max_abs_difference": 6.20841269019512e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C050/0.5/continuous/mean_signed_shift",
+      "max_abs_difference": 8.012254054667878e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C050/0.5/continuous/conversion_rate",
+      "max_abs_difference": 8.370040771588094e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C050/0.5/continuous/mean_trajectory_shift",
+      "max_abs_difference": 9.053088140253962e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C050/0.5/single_shot/mean_total_shift",
+      "max_abs_difference": 8.792879618857441e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C050/0.5/single_shot/mean_signed_shift",
+      "max_abs_difference": 9.681925400295555e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C050/0.5/single_shot/conversion_rate",
+      "max_abs_difference": 9.085614205428527e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C050/0.5/single_shot/mean_trajectory_shift",
+      "max_abs_difference": 8.543513119185775e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C100/0.05/continuous/mean_total_shift",
+      "max_abs_difference": 3.63207727782644e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C100/0.05/continuous/mean_signed_shift",
+      "max_abs_difference": 6.581107186987012e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C100/0.05/continuous/conversion_rate",
+      "max_abs_difference": 8.248068027183475e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C100/0.05/continuous/mean_trajectory_shift",
+      "max_abs_difference": 2.710505431213761e-20
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C100/0.05/single_shot/mean_total_shift",
+      "max_abs_difference": 1.0842021724855044e-19
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C100/0.05/single_shot/mean_signed_shift",
+      "max_abs_difference": 9.082903699997313e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C100/0.05/single_shot/conversion_rate",
+      "max_abs_difference": 6.537739100087592e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C100/0.05/single_shot/mean_trajectory_shift",
+      "max_abs_difference": 1.0842021724855044e-19
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C100/0.5/continuous/mean_total_shift",
+      "max_abs_difference": 7.632783294297951e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C100/0.5/continuous/mean_signed_shift",
+      "max_abs_difference": 9.75781955236954e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C100/0.5/continuous/conversion_rate",
+      "max_abs_difference": 8.977193988179977e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C100/0.5/continuous/mean_trajectory_shift",
+      "max_abs_difference": 7.849623728795052e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C100/0.5/single_shot/mean_total_shift",
+      "max_abs_difference": 8.131516293641283e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C100/0.5/single_shot/mean_signed_shift",
+      "max_abs_difference": 4.8138576458356397e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C100/0.5/single_shot/conversion_rate",
+      "max_abs_difference": 9.939423416260862e-17
+    },
+    {
+      "check": "E2/hub_vs_random_B20_C100/0.5/single_shot/mean_trajectory_shift",
+      "max_abs_difference": 8.131516293641283e-17
+    },
+    {
+      "check": "E2/label_retention_L30/0.05/continuous/mean_total_shift",
+      "max_abs_difference": 9.370217275705972e-17
+    },
+    {
+      "check": "E2/label_retention_L30/0.05/continuous/mean_signed_shift",
+      "max_abs_difference": 6.345293214471415e-17
+    },
+    {
+      "check": "E2/label_retention_L30/0.05/continuous/conversion_rate",
+      "max_abs_difference": 2.043721095135176e-17
+    },
+    {
+      "check": "E2/label_retention_L30/0.05/continuous/mean_trajectory_shift",
+      "max_abs_difference": 5.421010862427522e-20
+    },
+    {
+      "check": "E2/label_retention_L30/0.05/single_shot/mean_total_shift",
+      "max_abs_difference": 9.746977530644685e-17
+    },
+    {
+      "check": "E2/label_retention_L30/0.05/single_shot/mean_signed_shift",
+      "max_abs_difference": 9.508453052697874e-17
+    },
+    {
+      "check": "E2/label_retention_L30/0.05/single_shot/conversion_rate",
+      "max_abs_difference": 5.990217002982412e-17
+    },
+    {
+      "check": "E2/label_retention_L30/0.05/single_shot/mean_trajectory_shift",
+      "max_abs_difference": 9.971949481435427e-17
+    },
+    {
+      "check": "E2/label_retention_L30/0.5/continuous/mean_total_shift",
+      "max_abs_difference": 7.26415455565288e-17
+    },
+    {
+      "check": "E2/label_retention_L30/0.5/continuous/mean_signed_shift",
+      "max_abs_difference": 7.892991815694472e-17
+    },
+    {
+      "check": "E2/label_retention_L30/0.5/continuous/conversion_rate",
+      "max_abs_difference": 6.700369425960417e-17
+    },
+    {
+      "check": "E2/label_retention_L30/0.5/continuous/mean_trajectory_shift",
+      "max_abs_difference": 5.074066167232161e-17
+    },
+    {
+      "check": "E2/label_retention_L30/0.5/single_shot/mean_total_shift",
+      "max_abs_difference": 6.483528991463317e-17
+    },
+    {
+      "check": "E2/label_retention_L30/0.5/single_shot/mean_signed_shift",
+      "max_abs_difference": 4.9873299934333204e-17
+    },
+    {
+      "check": "E2/label_retention_L30/0.5/single_shot/conversion_rate",
+      "max_abs_difference": 6.873841773558098e-17
+    },
+    {
+      "check": "E2/label_retention_L30/0.5/single_shot/mean_trajectory_shift",
+      "max_abs_difference": 6.396792817664476e-17
+    },
+    {
+      "check": "E2/label_retention_L70/0.05/continuous/mean_total_shift",
+      "max_abs_difference": 9.6710833785707e-17
+    },
+    {
+      "check": "E2/label_retention_L70/0.05/continuous/mean_signed_shift",
+      "max_abs_difference": 9.307875650788056e-17
+    },
+    {
+      "check": "E2/label_retention_L70/0.05/continuous/conversion_rate",
+      "max_abs_difference": 7.98514900035574e-17
+    },
+    {
+      "check": "E2/label_retention_L70/0.05/continuous/mean_trajectory_shift",
+      "max_abs_difference": 7.573152174811248e-17
+    },
+    {
+      "check": "E2/label_retention_L70/0.05/single_shot/mean_total_shift",
+      "max_abs_difference": 7.161155349266757e-17
+    },
+    {
+      "check": "E2/label_retention_L70/0.05/single_shot/mean_signed_shift",
+      "max_abs_difference": 9.074772183703672e-17
+    },
+    {
+      "check": "E2/label_retention_L70/0.05/single_shot/conversion_rate",
+      "max_abs_difference": 9.16692936836494e-17
+    },
+    {
+      "check": "E2/label_retention_L70/0.05/single_shot/mean_trajectory_shift",
+      "max_abs_difference": 7.161155349266757e-17
+    },
+    {
+      "check": "E2/label_retention_L70/0.5/continuous/mean_total_shift",
+      "max_abs_difference": 6.982261990806649e-17
+    },
+    {
+      "check": "E2/label_retention_L70/0.5/continuous/mean_signed_shift",
+      "max_abs_difference": 8.586881206085195e-17
+    },
+    {
+      "check": "E2/label_retention_L70/0.5/continuous/conversion_rate",
+      "max_abs_difference": 6.158268339717665e-17
+    },
+    {
+      "check": "E2/label_retention_L70/0.5/continuous/mean_trajectory_shift",
+      "max_abs_difference": 9.107298248878237e-17
+    },
+    {
+      "check": "E2/label_retention_L70/0.5/single_shot/mean_total_shift",
+      "max_abs_difference": 9.237402509576498e-17
+    },
+    {
+      "check": "E2/label_retention_L70/0.5/single_shot/mean_signed_shift",
+      "max_abs_difference": 9.020562075079397e-17
+    },
+    {
+      "check": "E2/label_retention_L70/0.5/single_shot/conversion_rate",
+      "max_abs_difference": 7.546047120499111e-17
+    },
+    {
+      "check": "E2/label_retention_L70/0.5/single_shot/mean_trajectory_shift",
+      "max_abs_difference": 9.410874857174178e-17
+    },
+    {
+      "check": "E4/independent_homoskedastic/10/A/in_sample/bias",
+      "max_abs_difference": 9.020562075079397e-17
+    },
+    {
+      "check": "E4/independent_homoskedastic/10/A/complete_u/bias",
+      "max_abs_difference": 4.466912950640278e-17
+    },
+    {
+      "check": "E4/independent_homoskedastic/10/A/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/10/A/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/10/B/in_sample/bias",
+      "max_abs_difference": 4.5102810375396984e-17
+    },
+    {
+      "check": "E4/independent_homoskedastic/10/B/complete_u/bias",
+      "max_abs_difference": 3.165870343657673e-17
+    },
+    {
+      "check": "E4/independent_homoskedastic/10/B/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/10/B/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/10/C/in_sample/bias",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/10/C/complete_u/bias",
+      "max_abs_difference": 5.074066167232161e-17
+    },
+    {
+      "check": "E4/independent_homoskedastic/10/C/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/10/C/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/10/D/in_sample/bias",
+      "max_abs_difference": 3.469446951953614e-18
+    },
+    {
+      "check": "E4/independent_homoskedastic/10/D/complete_u/bias",
+      "max_abs_difference": 3.71881345162528e-17
+    },
+    {
+      "check": "E4/independent_homoskedastic/10/D/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/10/D/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/30/A/in_sample/bias",
+      "max_abs_difference": 1.734723475976807e-18
+    },
+    {
+      "check": "E4/independent_homoskedastic/30/A/complete_u/bias",
+      "max_abs_difference": 5.377642775528102e-17
+    },
+    {
+      "check": "E4/independent_homoskedastic/30/A/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/30/A/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/30/B/in_sample/bias",
+      "max_abs_difference": 3.209238430557093e-17
+    },
+    {
+      "check": "E4/independent_homoskedastic/30/B/complete_u/bias",
+      "max_abs_difference": 8.912141857830846e-17
+    },
+    {
+      "check": "E4/independent_homoskedastic/30/B/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/30/B/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/30/C/in_sample/bias",
+      "max_abs_difference": 8.673617379884035e-18
+    },
+    {
+      "check": "E4/independent_homoskedastic/30/C/complete_u/bias",
+      "max_abs_difference": 2.1575623232461538e-17
+    },
+    {
+      "check": "E4/independent_homoskedastic/30/C/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/30/C/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/30/D/in_sample/bias",
+      "max_abs_difference": 8.673617379884035e-18
+    },
+    {
+      "check": "E4/independent_homoskedastic/30/D/complete_u/bias",
+      "max_abs_difference": 4.166046847775551e-17
+    },
+    {
+      "check": "E4/independent_homoskedastic/30/D/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/30/D/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/60/A/in_sample/bias",
+      "max_abs_difference": 7.258733544790452e-17
+    },
+    {
+      "check": "E4/independent_homoskedastic/60/A/complete_u/bias",
+      "max_abs_difference": 8.456776945386935e-17
+    },
+    {
+      "check": "E4/independent_homoskedastic/60/A/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/60/A/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/60/B/in_sample/bias",
+      "max_abs_difference": 3.5561831257524545e-17
+    },
+    {
+      "check": "E4/independent_homoskedastic/60/B/complete_u/bias",
+      "max_abs_difference": 5.572799166575493e-17
+    },
+    {
+      "check": "E4/independent_homoskedastic/60/B/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/60/B/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/60/C/in_sample/bias",
+      "max_abs_difference": 6.071532165918825e-18
+    },
+    {
+      "check": "E4/independent_homoskedastic/60/C/complete_u/bias",
+      "max_abs_difference": 3.426078865054194e-17
+    },
+    {
+      "check": "E4/independent_homoskedastic/60/C/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/60/C/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/60/D/in_sample/bias",
+      "max_abs_difference": 4.597017211338539e-17
+    },
+    {
+      "check": "E4/independent_homoskedastic/60/D/complete_u/bias",
+      "max_abs_difference": 7.129476317039446e-18
+    },
+    {
+      "check": "E4/independent_homoskedastic/60/D/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_homoskedastic/60/D/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/10/A/in_sample/bias",
+      "max_abs_difference": 8.326672684688674e-17
+    },
+    {
+      "check": "E4/independent_heteroskedastic/10/A/complete_u/bias",
+      "max_abs_difference": 9.280770596475918e-17
+    },
+    {
+      "check": "E4/independent_heteroskedastic/10/A/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/10/A/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/10/B/in_sample/bias",
+      "max_abs_difference": 4.85722573273506e-17
+    },
+    {
+      "check": "E4/independent_heteroskedastic/10/B/complete_u/bias",
+      "max_abs_difference": 2.8189256484623115e-18
+    },
+    {
+      "check": "E4/independent_heteroskedastic/10/B/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/10/B/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/10/C/in_sample/bias",
+      "max_abs_difference": 4.163336342344337e-17
+    },
+    {
+      "check": "E4/independent_heteroskedastic/10/C/complete_u/bias",
+      "max_abs_difference": 5.567378155713065e-17
+    },
+    {
+      "check": "E4/independent_heteroskedastic/10/C/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/10/C/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/10/D/in_sample/bias",
+      "max_abs_difference": 6.938893903907228e-18
+    },
+    {
+      "check": "E4/independent_heteroskedastic/10/D/complete_u/bias",
+      "max_abs_difference": 8.608565249534905e-17
+    },
+    {
+      "check": "E4/independent_heteroskedastic/10/D/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/10/D/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/30/A/in_sample/bias",
+      "max_abs_difference": 2.6020852139652106e-17
+    },
+    {
+      "check": "E4/independent_heteroskedastic/30/A/complete_u/bias",
+      "max_abs_difference": 5.041540102057596e-18
+    },
+    {
+      "check": "E4/independent_heteroskedastic/30/A/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/30/A/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/30/B/in_sample/bias",
+      "max_abs_difference": 2.2551405187698492e-17
+    },
+    {
+      "check": "E4/independent_heteroskedastic/30/B/complete_u/bias",
+      "max_abs_difference": 5.941427905220564e-17
+    },
+    {
+      "check": "E4/independent_heteroskedastic/30/B/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/30/B/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/30/C/in_sample/bias",
+      "max_abs_difference": 3.9898639947466563e-17
+    },
+    {
+      "check": "E4/independent_heteroskedastic/30/C/complete_u/bias",
+      "max_abs_difference": 2.8189256484623115e-17
+    },
+    {
+      "check": "E4/independent_heteroskedastic/30/C/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/30/C/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/30/D/in_sample/bias",
+      "max_abs_difference": 4.163336342344337e-17
+    },
+    {
+      "check": "E4/independent_heteroskedastic/30/D/complete_u/bias",
+      "max_abs_difference": 3.1008182133085427e-17
+    },
+    {
+      "check": "E4/independent_heteroskedastic/30/D/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/30/D/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/60/A/in_sample/bias",
+      "max_abs_difference": 3.9898639947466563e-17
+    },
+    {
+      "check": "E4/independent_heteroskedastic/60/A/complete_u/bias",
+      "max_abs_difference": 3.2526065174565133e-18
+    },
+    {
+      "check": "E4/independent_heteroskedastic/60/A/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/60/A/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/60/B/in_sample/bias",
+      "max_abs_difference": 2.7755575615628914e-17
+    },
+    {
+      "check": "E4/independent_heteroskedastic/60/B/complete_u/bias",
+      "max_abs_difference": 6.028164079019405e-17
+    },
+    {
+      "check": "E4/independent_heteroskedastic/60/B/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/60/B/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/60/C/in_sample/bias",
+      "max_abs_difference": 6.071532165918825e-18
+    },
+    {
+      "check": "E4/independent_heteroskedastic/60/C/complete_u/bias",
+      "max_abs_difference": 7.074419175467916e-17
+    },
+    {
+      "check": "E4/independent_heteroskedastic/60/C/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/60/C/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/60/D/in_sample/bias",
+      "max_abs_difference": 3.469446951953614e-18
+    },
+    {
+      "check": "E4/independent_heteroskedastic/60/D/complete_u/bias",
+      "max_abs_difference": 1.0679391398982219e-17
+    },
+    {
+      "check": "E4/independent_heteroskedastic/60/D/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/independent_heteroskedastic/60/D/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/10/A/in_sample/bias",
+      "max_abs_difference": 1.3877787807814457e-17
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/10/A/complete_u/bias",
+      "max_abs_difference": 1.2305694657710475e-17
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/10/A/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/10/A/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/10/B/in_sample/bias",
+      "max_abs_difference": 2.0816681711721685e-17
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/10/B/complete_u/bias",
+      "max_abs_difference": 6.505213034913027e-17
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/10/B/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/10/B/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/10/C/in_sample/bias",
+      "max_abs_difference": 1.5612511283791264e-17
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/10/C/complete_u/bias",
+      "max_abs_difference": 6.613633252161577e-18
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/10/C/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/10/C/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/10/D/in_sample/bias",
+      "max_abs_difference": 6.938893903907228e-18
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/10/D/complete_u/bias",
+      "max_abs_difference": 5.942783157936171e-18
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/10/D/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/10/D/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/30/A/in_sample/bias",
+      "max_abs_difference": 3.903127820947816e-17
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/30/A/complete_u/bias",
+      "max_abs_difference": 9.974659986866641e-18
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/30/A/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/30/A/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/30/B/in_sample/bias",
+      "max_abs_difference": 4.85722573273506e-17
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/30/B/complete_u/bias",
+      "max_abs_difference": 3.393552799879629e-17
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/30/B/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/30/B/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/30/C/in_sample/bias",
+      "max_abs_difference": 1.6479873021779667e-17
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/30/C/complete_u/bias",
+      "max_abs_difference": 1.0863705768304754e-16
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/30/C/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/30/C/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/30/D/in_sample/bias",
+      "max_abs_difference": 1.9949319973733282e-17
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/30/D/complete_u/bias",
+      "max_abs_difference": 1.0318555363451887e-17
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/30/D/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/30/D/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/60/A/in_sample/bias",
+      "max_abs_difference": 5.724587470723463e-17
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/60/A/complete_u/bias",
+      "max_abs_difference": 3.122502256758253e-17
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/60/A/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/60/A/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/60/B/in_sample/bias",
+      "max_abs_difference": 5.074066167232161e-17
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/60/B/complete_u/bias",
+      "max_abs_difference": 2.3920210430461442e-17
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/60/B/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/60/B/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/60/C/in_sample/bias",
+      "max_abs_difference": 1.8865117801247777e-17
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/60/C/complete_u/bias",
+      "max_abs_difference": 9.194034422677078e-17
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/60/C/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/60/C/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/60/D/in_sample/bias",
+      "max_abs_difference": 4.466912950640278e-17
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/60/D/complete_u/bias",
+      "max_abs_difference": 7.45727806762686e-18
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/60/D/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/common_shock_heteroskedastic/60/D/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/10/A/in_sample/bias",
+      "max_abs_difference": 7.632783294297951e-17
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/10/A/complete_u/bias",
+      "max_abs_difference": 8.413408858487514e-17
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/10/A/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/10/A/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/10/B/in_sample/bias",
+      "max_abs_difference": 1.734723475976807e-17
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/10/B/complete_u/bias",
+      "max_abs_difference": 3.209238430557093e-17
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/10/B/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/10/B/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/10/C/in_sample/bias",
+      "max_abs_difference": 2.42861286636753e-17
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/10/C/complete_u/bias",
+      "max_abs_difference": 7.26415455565288e-17
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/10/C/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/10/C/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/10/D/in_sample/bias",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/10/D/complete_u/bias",
+      "max_abs_difference": 1.734723475976807e-17
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/10/D/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/10/D/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/30/A/in_sample/bias",
+      "max_abs_difference": 4.5102810375396984e-17
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/30/A/complete_u/bias",
+      "max_abs_difference": 2.6020852139652106e-17
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/30/A/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/30/A/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/30/B/in_sample/bias",
+      "max_abs_difference": 2.862293735361732e-17
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/30/B/complete_u/bias",
+      "max_abs_difference": 8.630249292984615e-17
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/30/B/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/30/B/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/30/C/in_sample/bias",
+      "max_abs_difference": 1.474514954580286e-17
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/30/C/complete_u/bias",
+      "max_abs_difference": 4.3286771736483765e-17
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/30/C/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/30/C/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/30/D/in_sample/bias",
+      "max_abs_difference": 2.0816681711721685e-17
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/30/D/complete_u/bias",
+      "max_abs_difference": 3.117081245895825e-17
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/30/D/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/30/D/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/60/A/in_sample/bias",
+      "max_abs_difference": 2.3852447794681098e-17
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/60/A/complete_u/bias",
+      "max_abs_difference": 8.673617379884035e-19
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/60/A/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/60/A/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/60/B/in_sample/bias",
+      "max_abs_difference": 5.724587470723463e-17
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/60/B/complete_u/bias",
+      "max_abs_difference": 2.0166160408230382e-17
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/60/B/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/60/B/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/60/C/in_sample/bias",
+      "max_abs_difference": 2.42861286636753e-17
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/60/C/complete_u/bias",
+      "max_abs_difference": 4.3625584915385485e-17
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/60/C/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/60/C/jackknife/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/60/D/in_sample/bias",
+      "max_abs_difference": 3.469446951953614e-18
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/60/D/complete_u/bias",
+      "max_abs_difference": 9.112719259740665e-17
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/60/D/percentile/coverage",
+      "max_abs_difference": 0.0
+    },
+    {
+      "check": "E4/structured_shock_heteroskedastic/60/D/jackknife/coverage",
+      "max_abs_difference": 0.0
+    }
+  ],
+  "independent_algorithm": "Grouped cell means and distinct-block quadratic sums; raw paired block contrasts; dataset-level coverage indicators",
+  "scope": "All full-crossed E1/E3 allocations for four outcomes, all E1/E3 schedule contrasts, all 96 primary E2 contrasts, E4 estimator biases and coverages",
+  "new_simulation_runs": 0
+}

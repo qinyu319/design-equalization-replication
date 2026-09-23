@@ -1,0 +1,9 @@
+stubbornness,view,outcome,factor,B,B_low,B_high,B_total,cells,R,within_view_share,range_label,dose
+0.2,full_crossed,mean_total_shift,seeding_regime,7.123275713353741e-06,7.011833114300567e-06,7.234632353112754e-06,1.176334854569769e-05,72,30,0.6055482999319098,2.5-97.5 percentile sensitivity range; not calibrated CI,
+0.2,equal_dose_0.05,mean_total_shift,seeding_regime,5.6314271154796265e-08,5.3070053682727956e-08,6.057126566302739e-08,6.876127818571694e-08,24,30,0.8189823202922054,2.5-97.5 percentile sensitivity range; not calibrated CI,0.05
+0.2,equal_dose_0.5,mean_total_shift,seeding_regime,5.652766994507143e-06,5.519881935500346e-06,5.781367890216337e-06,6.896214553211e-06,24,30,0.8196912887339206,2.5-97.5 percentile sensitivity range; not calibrated CI,0.5
+0.2,equal_dose_0.95,mean_total_shift,seeding_regime,1.9975939786355745e-05,1.9563781564025963e-05,2.038085100228972e-05,2.4329064496966785e-05,24,30,0.8210730745050324,2.5-97.5 percentile sensitivity range; not calibrated CI,0.95
+0.8,full_crossed,mean_total_shift,seeding_regime,2.9274055360913515e-08,2.86173589929873e-08,2.9971399706363475e-08,4.8447818276683974e-08,72,30,0.6042388780797168,2.5-97.5 percentile sensitivity range; not calibrated CI,
+0.8,equal_dose_0.05,mean_total_shift,seeding_regime,2.213669353712472e-10,1.932347659936632e-10,2.5577818255019936e-10,2.7001023124874176e-10,24,30,0.8198464715483951,2.5-97.5 percentile sensitivity range; not calibrated CI,0.05
+0.8,equal_dose_0.5,mean_total_shift,seeding_regime,2.3386097388590608e-08,2.269640258837356e-08,2.4160015835318522e-08,2.8585438152855e-08,24,30,0.818112259239759,2.5-97.5 percentile sensitivity range; not calibrated CI,0.5
+0.8,equal_dose_0.95,mean_total_shift,seeding_regime,8.19443268382708e-08,7.949356349691967e-08,8.44967553817942e-08,1.001201935302794e-07,24,30,0.8184595329761157,2.5-97.5 percentile sensitivity range; not calibrated CI,0.95

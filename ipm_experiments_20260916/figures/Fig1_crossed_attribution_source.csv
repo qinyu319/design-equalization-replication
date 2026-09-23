@@ -1,0 +1,9 @@
+reversion,view,outcome,factor,B,B_low,B_high,B_total,cells,R,within_view_share,range_label,dose
+0.0,full_crossed,mean_total_shift,topology,8.158225362755183e-08,-7.682350867871119e-09,2.01963055831989e-07,0.0007848800327243,108,30,0.0001039423226813,2.5-97.5 percentile sensitivity range; not calibrated CI,
+0.0,full_crossed,mean_total_shift,dose,0.0005538775910331,0.0005496954143493,0.0005584250001088,0.0007848800327243,108,30,0.7056843949903655,2.5-97.5 percentile sensitivity range; not calibrated CI,
+0.0,full_crossed,mean_total_shift,seeding_regime,1.6169081451246762e-06,1.4639254875198983e-06,1.7637054307444257e-06,0.0007848800327243,108,30,0.0020600704282313,2.5-97.5 percentile sensitivity range; not calibrated CI,
+0.0,full_crossed,mean_total_shift,strength,0.0002293039512924,0.0002277661961074,0.0002309730888681,0.0007848800327243,108,30,0.2921515922587219,2.5-97.5 percentile sensitivity range; not calibrated CI,
+0.05,full_crossed,mean_total_shift,topology,3.554822095672263e-09,-1.3542255001485503e-09,1.0061411060454178e-08,5.625831525134528e-05,108,30,6.318749645790822e-05,2.5-97.5 percentile sensitivity range; not calibrated CI,
+0.05,full_crossed,mean_total_shift,dose,2.2166157923206577e-05,2.1930502680198345e-05,2.242588946210134e-05,5.625831525134528e-05,108,30,0.3940067850267971,2.5-97.5 percentile sensitivity range; not calibrated CI,
+0.05,full_crossed,mean_total_shift,seeding_regime,2.483044665807192e-05,2.4564512183475283e-05,2.51330642501844e-05,5.625831525134528e-05,108,30,0.4413649172951043,2.5-97.5 percentile sensitivity range; not calibrated CI,
+0.05,full_crossed,mean_total_shift,strength,9.25815584797112e-06,9.147852526232816e-06,9.371628663455985e-06,5.625831525134528e-05,108,30,0.1645651101816408,2.5-97.5 percentile sensitivity range; not calibrated CI,

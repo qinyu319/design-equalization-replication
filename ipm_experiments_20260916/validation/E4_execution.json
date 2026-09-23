@@ -1,0 +1,15 @@
+{
+  "datasets": 12000,
+  "factor_estimate_rows": 48000,
+  "coverage_datasets": 6000,
+  "bootstrap_draws_per_dataset": 399,
+  "noise_settings": [
+    "independent_homoskedastic",
+    "independent_heteroskedastic",
+    "common_shock_heteroskedastic",
+    "structured_shock_heteroskedastic"
+  ],
+  "elapsed_seconds": 8.389977499999986,
+  "code_sha256": "079bdb0d8e63a9121596cdebf3870fcbcc7bb10f7739969e8a6541a0ee8e8433",
+  "all_estimates_finite": true
+}

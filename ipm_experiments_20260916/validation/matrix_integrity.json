@@ -1,0 +1,45 @@
+{
+  "checks": [
+    {
+      "suite": "E1",
+      "rows": 6480,
+      "tests": {
+        "row_count": true,
+        "exact_run_ids": true,
+        "unique_run_ids": true,
+        "finite_primary_outcomes": true,
+        "direct_dose_conserved": true,
+        "replication_set": true
+      },
+      "passed": true
+    },
+    {
+      "suite": "E2",
+      "rows": 9600,
+      "tests": {
+        "row_count": true,
+        "exact_run_ids": true,
+        "unique_run_ids": true,
+        "finite_primary_outcomes": true,
+        "direct_dose_conserved": true,
+        "replication_set": true
+      },
+      "passed": true
+    },
+    {
+      "suite": "E3",
+      "rows": 4560,
+      "tests": {
+        "row_count": true,
+        "exact_run_ids": true,
+        "unique_run_ids": true,
+        "finite_primary_outcomes": true,
+        "direct_dose_conserved": true,
+        "replication_set": true
+      },
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "new_matrix_simulations": 20640
+}

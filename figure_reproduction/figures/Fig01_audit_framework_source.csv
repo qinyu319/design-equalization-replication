@@ -1,0 +1,8 @@
+layer,title,description
+procedure,Specify the model,"Record dose, schedule, strength and intervention rules"
+procedure,Audit the design,Equalize bundled dimensions and cross them independently
+procedure,Interpret the evidence,"State the scale, outcome window and model limits"
+experiment,E1 Independent crossing,Dose × schedule × strength with and without reversion
+experiment,E2 Governance contrasts,"Coverage, compliance and label persistence"
+experiment,E3 Alternative dynamics,Anchored peer averaging and paired no-input controls
+experiment,E4 Statistical calibration,"Known truth, covariance and replication count"

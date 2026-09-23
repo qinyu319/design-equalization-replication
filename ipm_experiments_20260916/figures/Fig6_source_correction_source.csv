@@ -1,0 +1,13 @@
+topology,regime,node_iteration_is_id_order,selected_mean_degree_legacy,selected_mean_degree_corrected,legacy_selected_below_top_k_cutoff,overlap_count,source,design,outcome,factor,R,corrected_B_total,corrected_B_factor,corrected_q,corrected_tau,corrected_rho,replications,B_total_U,B_factor_U,q_proportion,rho_proportion,tau_proportion,in_sample_B_total,in_sample_B_factor,B_factor_difference,q_difference
+BA,single_shot,True,27.9,27.9,0.0,48.0,selector_audit,,,,,,,,,,,,,,,,,,,
+BA,continuous,True,29.48,29.48,0.0,48.0,selector_audit,,,,,,,,,,,,,,,,,,,
+ER,single_shot,True,11.18,11.18,0.0,42.0,selector_audit,,,,,,,,,,,,,,,,,,,
+ER,continuous,True,11.52,11.52,0.0,48.0,selector_audit,,,,,,,,,,,,,,,,,,,
+WS,single_shot,True,7.74,7.74,0.0,42.0,selector_audit,,,,,,,,,,,,,,,,,,,
+WS,continuous,True,7.68,7.68,0.0,31.0,selector_audit,,,,,,,,,,,,,,,,,,,
+SBM,single_shot,False,5.64,11.58,47.0,0.0,selector_audit,,,,,,,,,,,,,,,,,,,
+SBM,continuous,False,6.14,11.64,46.0,2.0,selector_audit,,,,,,,,,,,,,,,,,,,
+,,,,,,,allocation,C-D50,mean_total_shift,topology,30.0,0.0033526428316026,1.0872124497822342e-06,0.0003242851995846,1.0,1.0,30.0,0.0033608356716367,1.2033229560317555e-06,0.0003580427826885,1.0,1.0,0.0033609760803919,1.2405441608435302e-06,-1.1611050624952133e-07,-3.3757583103870455e-05
+,,,,,,,allocation,C-D50,mean_total_shift,message_condition,30.0,0.0033526428316026,0.0004281027015808,0.1276911150646523,1.0,1.0,30.0,0.0033608356716367,0.000428933092007,0.127626916015863,1.0,1.0,0.0033609760803919,0.0004289723176639,-8.303904261475247e-07,6.419904878934846e-05
+,,,,,,,allocation,C-D50,mean_total_shift,inoculation,30.0,0.0033526428316026,9.92245670311479e-07,0.0002959592536844,1.0,1.0,30.0,0.0033608356716367,8.568028071801664e-07,0.0002549374295241,1.0,1.0,0.0033609760803919,8.884876613631394e-07,1.3544286313131272e-07,4.102182416030394e-05
+,,,,,,,allocation,C-D50,mean_total_shift,seeding_regime,30.0,0.0033526428316026,0.0029224606719016,0.8716886404820787,1.0,1.0,30.0,0.0033608356716367,0.0029298424538664,0.8717601037719244,1.0,1.0,0.0033609760803919,0.0029298747309057,-7.381781964722889e-06,-7.146328984564132e-05

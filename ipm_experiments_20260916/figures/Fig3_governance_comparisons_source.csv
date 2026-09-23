@@ -1,0 +1,25 @@
+comparison,dose,seeding_regime,outcome,mean,mcse,ci_low,ci_high,replication_blocks,interval
+hub_vs_random_B05_C050,0.05,continuous,mean_total_shift,8.451402595227485e-06,1.6871598949001617e-05,-2.605489168544558e-05,4.295769687590055e-05,30,95% t interval for Monte Carlo mean; unadjusted
+hub_vs_random_B05_C050,0.05,single_shot,mean_total_shift,1.1317372608828324e-07,1.5293548340256784e-05,-3.116564467279429e-05,3.139199212497085e-05,30,95% t interval for Monte Carlo mean; unadjusted
+hub_vs_random_B05_C050,0.5,continuous,mean_total_shift,0.0002651005176198,7.678971622291638e-05,0.0001080479137897,0.0004221531214499,30,95% t interval for Monte Carlo mean; unadjusted
+hub_vs_random_B05_C050,0.5,single_shot,mean_total_shift,0.0004724098374809,6.547399225926506e-05,0.0003385004877235,0.0006063191872383,30,95% t interval for Monte Carlo mean; unadjusted
+hub_vs_random_B05_C100,0.05,continuous,mean_total_shift,4.875685842912512e-06,1.782953374210418e-05,-3.1589805071844177e-05,4.1341176757669193e-05,30,95% t interval for Monte Carlo mean; unadjusted
+hub_vs_random_B05_C100,0.05,single_shot,mean_total_shift,2.9317492963266694e-05,1.536884014942786e-05,-2.1153144755423603e-06,6.075030040207576e-05,30,95% t interval for Monte Carlo mean; unadjusted
+hub_vs_random_B05_C100,0.5,continuous,mean_total_shift,0.0005039683691779,9.133682069608515e-05,0.0003171635960721,0.0006907731422837,30,95% t interval for Monte Carlo mean; unadjusted
+hub_vs_random_B05_C100,0.5,single_shot,mean_total_shift,0.0006351851144174,8.065416755457628e-05,0.0004702288201732,0.0008001414086616,30,95% t interval for Monte Carlo mean; unadjusted
+hub_vs_random_B20_C050,0.05,continuous,mean_total_shift,6.000546813818417e-05,2.6992199695744453e-05,4.8002212140822845e-06,0.0001152107150622,30,95% t interval for Monte Carlo mean; unadjusted
+hub_vs_random_B20_C050,0.05,single_shot,mean_total_shift,2.925934235648833e-05,1.9103078231928663e-05,-9.810839499432163e-06,6.832952421240884e-05,30,95% t interval for Monte Carlo mean; unadjusted
+hub_vs_random_B20_C050,0.5,continuous,mean_total_shift,0.0005415423484628,0.0001166383276675,0.0003029901833083,0.0007800945136173,30,95% t interval for Monte Carlo mean; unadjusted
+hub_vs_random_B20_C050,0.5,single_shot,mean_total_shift,0.0005278773813293,0.0001091225344708,0.0003046967392049,0.0007510580234538,30,95% t interval for Monte Carlo mean; unadjusted
+hub_vs_random_B20_C100,0.05,continuous,mean_total_shift,7.035487929003412e-05,2.7920338524116197e-05,1.3251375322132035e-05,0.0001274583832579,30,95% t interval for Monte Carlo mean; unadjusted
+hub_vs_random_B20_C100,0.05,single_shot,mean_total_shift,4.919172004648335e-05,1.731863718125495e-05,1.3771129922039172e-05,8.461231017092754e-05,30,95% t interval for Monte Carlo mean; unadjusted
+hub_vs_random_B20_C100,0.5,continuous,mean_total_shift,0.0009883253791253,0.0001106482656755,0.0007620242663151,0.0012146264919355,30,95% t interval for Monte Carlo mean; unadjusted
+hub_vs_random_B20_C100,0.5,single_shot,mean_total_shift,0.0012483140743222,0.0001046200127321,0.001034342123122,0.0014622860255223,30,95% t interval for Monte Carlo mean; unadjusted
+label_retention_L30,0.05,continuous,mean_total_shift,0.0001310135409208,4.23881979608668e-06,0.0001223441810261,0.0001396829008154,30,95% t interval for Monte Carlo mean; unadjusted
+label_retention_L30,0.05,single_shot,mean_total_shift,0.0001352630489888,3.569958694997046e-06,0.0001279616636446,0.0001425644343329,30,95% t interval for Monte Carlo mean; unadjusted
+label_retention_L30,0.5,continuous,mean_total_shift,0.0014287221302894,2.2901749071113585e-05,0.0013818827942325,0.0014755614663463,30,95% t interval for Monte Carlo mean; unadjusted
+label_retention_L30,0.5,single_shot,mean_total_shift,0.001503158969546,1.244438666251161e-05,0.0014777073410657,0.0015286105980263,30,95% t interval for Monte Carlo mean; unadjusted
+label_retention_L70,0.05,continuous,mean_total_shift,0.00027633937581,8.400389448481875e-06,0.0002591586503046,0.0002935201013155,30,95% t interval for Monte Carlo mean; unadjusted
+label_retention_L70,0.05,single_shot,mean_total_shift,0.0002753482627953,6.518813813163648e-06,0.0002620157915531,0.0002886807340375,30,95% t interval for Monte Carlo mean; unadjusted
+label_retention_L70,0.5,continuous,mean_total_shift,0.0029055918769027,5.21310085732284e-05,0.0027989719928944,0.0030122117609109,30,95% t interval for Monte Carlo mean; unadjusted
+label_retention_L70,0.5,single_shot,mean_total_shift,0.0031710012369591,3.4648460797971975e-05,0.0031001371778809,0.0032418652960374,30,95% t interval for Monte Carlo mean; unadjusted

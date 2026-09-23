@@ -1,0 +1,261 @@
+{
+  "source_root": "inputs\\archive_reference",
+  "original_model_sha256": "a11c39354fef4c37a10665eb7b8f16e3438c856379760a5b7514c7279a77f331",
+  "frozen_estimator_sha256": "00d0b9db45ff8cdd7c1558129d589988b628e5ab22785aff99659dbbf57a67a7",
+  "original_archive_sha256": "21ab14ffa0136c0cef0a4efee4bfcc369bf3c925221127c69591a9695f09f6ed",
+  "source_rows": 120960,
+  "source_designs": 25,
+  "replay_checks": [
+    {
+      "topology": "BA",
+      "regime": "single_shot",
+      "checks": {
+        "mean_total_shift": true,
+        "mean_signed_shift": true,
+        "conversion_rate": true,
+        "total_direct_exposures": true,
+        "total_secondhand_exposures": true,
+        "direct_exposures_by_step": true,
+        "secondhand_exposures_by_step": true,
+        "cumulative_total_shift_by_step": true
+      },
+      "passed": true
+    },
+    {
+      "topology": "BA",
+      "regime": "continuous",
+      "checks": {
+        "mean_total_shift": true,
+        "mean_signed_shift": true,
+        "conversion_rate": true,
+        "total_direct_exposures": true,
+        "total_secondhand_exposures": true,
+        "direct_exposures_by_step": true,
+        "secondhand_exposures_by_step": true,
+        "cumulative_total_shift_by_step": true
+      },
+      "passed": true
+    },
+    {
+      "topology": "ER",
+      "regime": "single_shot",
+      "checks": {
+        "mean_total_shift": true,
+        "mean_signed_shift": true,
+        "conversion_rate": true,
+        "total_direct_exposures": true,
+        "total_secondhand_exposures": true,
+        "direct_exposures_by_step": true,
+        "secondhand_exposures_by_step": true,
+        "cumulative_total_shift_by_step": true
+      },
+      "passed": true
+    },
+    {
+      "topology": "ER",
+      "regime": "continuous",
+      "checks": {
+        "mean_total_shift": true,
+        "mean_signed_shift": true,
+        "conversion_rate": true,
+        "total_direct_exposures": true,
+        "total_secondhand_exposures": true,
+        "direct_exposures_by_step": true,
+        "secondhand_exposures_by_step": true,
+        "cumulative_total_shift_by_step": true
+      },
+      "passed": true
+    },
+    {
+      "topology": "WS",
+      "regime": "single_shot",
+      "checks": {
+        "mean_total_shift": true,
+        "mean_signed_shift": true,
+        "conversion_rate": true,
+        "total_direct_exposures": true,
+        "total_secondhand_exposures": true,
+        "direct_exposures_by_step": true,
+        "secondhand_exposures_by_step": true,
+        "cumulative_total_shift_by_step": true
+      },
+      "passed": true
+    },
+    {
+      "topology": "WS",
+      "regime": "continuous",
+      "checks": {
+        "mean_total_shift": true,
+        "mean_signed_shift": true,
+        "conversion_rate": true,
+        "total_direct_exposures": true,
+        "total_secondhand_exposures": true,
+        "direct_exposures_by_step": true,
+        "secondhand_exposures_by_step": true,
+        "cumulative_total_shift_by_step": true
+      },
+      "passed": true
+    },
+    {
+      "topology": "SBM",
+      "regime": "single_shot",
+      "checks": {
+        "mean_total_shift": true,
+        "mean_signed_shift": true,
+        "conversion_rate": true,
+        "total_direct_exposures": true,
+        "total_secondhand_exposures": true,
+        "direct_exposures_by_step": true,
+        "secondhand_exposures_by_step": true,
+        "cumulative_total_shift_by_step": true
+      },
+      "passed": true
+    },
+    {
+      "topology": "SBM",
+      "regime": "continuous",
+      "checks": {
+        "mean_total_shift": true,
+        "mean_signed_shift": true,
+        "conversion_rate": true,
+        "total_direct_exposures": true,
+        "total_secondhand_exposures": true,
+        "direct_exposures_by_step": true,
+        "secondhand_exposures_by_step": true,
+        "cumulative_total_shift_by_step": true
+      },
+      "passed": true
+    }
+  ],
+  "replay_passed": true,
+  "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "package_versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scipy": "1.16.1",
+    "networkx": "3.5",
+    "matplotlib": "3.10.6",
+    "yaml": "6.0.3"
+  },
+  "protocol_sha256": "3c9a4ae3f267bde0ee091841706f56a59a7537656b2eb1e56228311bc24dc209"
+}
+E1: 300/6480 runs; 2.5s
+E1: 600/6480 runs; 3.0s
+E1: 900/6480 runs; 3.5s
+E1: 1200/6480 runs; 4.2s
+E1: 1500/6480 runs; 4.8s
+E1: 1800/6480 runs; 5.4s
+E1: 2100/6480 runs; 6.0s
+E1: 2400/6480 runs; 6.8s
+E1: 2700/6480 runs; 7.3s
+E1: 3000/6480 runs; 7.9s
+E1: 3300/6480 runs; 8.6s
+E1: 3600/6480 runs; 9.1s
+E1: 3900/6480 runs; 9.7s
+E1: 4200/6480 runs; 10.4s
+E1: 4500/6480 runs; 11.0s
+E1: 4800/6480 runs; 11.7s
+E1: 5100/6480 runs; 12.4s
+E1: 5400/6480 runs; 12.9s
+E1: 5700/6480 runs; 13.6s
+E1: 6000/6480 runs; 14.3s
+E1: 6300/6480 runs; 14.8s
+E1: 6480/6480 runs; 15.2s
+{"suite": "E1", "rows": 6480, "replications": 30, "elapsed_seconds": 18.14863570000307, "unique_run_ids": 6480, "outcome_finite": true}
+E2: 300/9600 runs; 2.8s
+E2: 600/9600 runs; 3.4s
+E2: 900/9600 runs; 3.9s
+E2: 1200/9600 runs; 4.7s
+E2: 1500/9600 runs; 5.2s
+E2: 1800/9600 runs; 5.8s
+E2: 2100/9600 runs; 6.2s
+E2: 2400/9600 runs; 6.9s
+E2: 2700/9600 runs; 7.5s
+E2: 3000/9600 runs; 8.0s
+E2: 3300/9600 runs; 8.5s
+E2: 3600/9600 runs; 9.1s
+E2: 3900/9600 runs; 9.6s
+E2: 4200/9600 runs; 10.1s
+E2: 4500/9600 runs; 10.6s
+E2: 4800/9600 runs; 11.2s
+E2: 5100/9600 runs; 11.7s
+E2: 5400/9600 runs; 12.2s
+E2: 5700/9600 runs; 12.7s
+E2: 6000/9600 runs; 13.4s
+E2: 6300/9600 runs; 13.9s
+E2: 6600/9600 runs; 14.5s
+E2: 6900/9600 runs; 14.9s
+E2: 7200/9600 runs; 15.6s
+E2: 7500/9600 runs; 15.9s
+E2: 7800/9600 runs; 16.5s
+E2: 8100/9600 runs; 16.9s
+E2: 8400/9600 runs; 17.5s
+E2: 8700/9600 runs; 18.0s
+E2: 9000/9600 runs; 18.5s
+E2: 9300/9600 runs; 19.0s
+E2: 9600/9600 runs; 19.5s
+{"suite": "E2", "rows": 9600, "replications": 30, "elapsed_seconds": 22.772312600001896, "unique_run_ids": 9600, "outcome_finite": true}
+E3: 300/4560 runs; 2.2s
+E3: 600/4560 runs; 2.6s
+E3: 900/4560 runs; 2.8s
+E3: 1200/4560 runs; 3.2s
+E3: 1500/4560 runs; 3.6s
+E3: 1800/4560 runs; 4.0s
+E3: 2100/4560 runs; 4.4s
+E3: 2400/4560 runs; 4.8s
+E3: 2700/4560 runs; 5.1s
+E3: 3000/4560 runs; 5.5s
+E3: 3300/4560 runs; 5.9s
+E3: 3600/4560 runs; 6.2s
+E3: 3900/4560 runs; 6.7s
+E3: 4200/4560 runs; 7.1s
+E3: 4500/4560 runs; 7.4s
+E3: 4560/4560 runs; 7.4s
+{"suite": "E3", "rows": 4560, "replications": 30, "elapsed_seconds": 8.483274700000038, "unique_run_ids": 4560, "outcome_finite": true}
+E4: independent_homoskedastic R=10; 0.4s
+E4: independent_homoskedastic R=30; 1.0s
+E4: independent_homoskedastic R=60; 1.8s
+E4: independent_heteroskedastic R=10; 2.2s
+E4: independent_heteroskedastic R=30; 2.8s
+E4: independent_heteroskedastic R=60; 3.6s
+E4: common_shock_heteroskedastic R=10; 4.0s
+E4: common_shock_heteroskedastic R=30; 4.6s
+E4: common_shock_heteroskedastic R=60; 5.4s
+E4: structured_shock_heteroskedastic R=10; 5.8s
+E4: structured_shock_heteroskedastic R=30; 6.4s
+E4: structured_shock_heteroskedastic R=60; 7.3s
+{"datasets": 12000, "factor_estimate_rows": 48000, "coverage_datasets": 6000, "bootstrap_draws_per_dataset": 399, "noise_settings": ["independent_homoskedastic", "independent_heteroskedastic", "common_shock_heteroskedastic", "structured_shock_heteroskedastic"], "elapsed_seconds": 8.883530200000678, "code_sha256": "079bdb0d8e63a9121596cdebf3870fcbcc7bb10f7739969e8a6541a0ee8e8433", "all_estimates_finite": true}
+{"checks": [{"suite": "E1", "rows": 6480, "tests": {"row_count": true, "exact_run_ids": true, "unique_run_ids": true, "finite_primary_outcomes": true, "direct_dose_conserved": true, "replication_set": true}, "passed": true}, {"suite": "E2", "rows": 9600, "tests": {"row_count": true, "exact_run_ids": true, "unique_run_ids": true, "finite_primary_outcomes": true, "direct_dose_conserved": true, "replication_set": true}, "passed": true}, {"suite": "E3", "rows": 4560, "tests": {"row_count": true, "exact_run_ids": true, "unique_run_ids": true, "finite_primary_outcomes": true, "direct_dose_conserved": true, "replication_set": true}, "passed": true}], "passed": true, "new_matrix_simulations": 20640}
+E1 analysis complete
+E2 analysis complete
+E3 analysis complete
+E5: 3000/40320 correction runs; 14.1s
+E5: 6000/40320 correction runs; 20.5s
+E5: 9000/40320 correction runs; 27.2s
+E5: 12000/40320 correction runs; 36.3s
+E5: 15000/40320 correction runs; 47.8s
+E5: 18000/40320 correction runs; 57.8s
+E5: 21000/40320 correction runs; 67.3s
+E5: 24000/40320 correction runs; 76.4s
+E5: 27000/40320 correction runs; 85.4s
+E5: 30000/40320 correction runs; 93.4s
+E5: 33000/40320 correction runs; 99.8s
+E5: 36000/40320 correction runs; 105.7s
+E5: 39000/40320 correction runs; 112.3s
+E5: 40320/40320 correction runs; 114.8s
+{"corrected_runs": 40320, "archive_rows": 120960, "elapsed_seconds": 155.47537870000087, "original_archive_unchanged": true, "nonhub_rows_unchanged": true, "direct_exposure_unchanged": true}
+           factor   B_factor_U  corrected_B_factor  q_proportion  corrected_q
+         topology 1.203323e-06        1.087212e-06      0.000358     0.000324
+message_condition 4.289331e-04        4.281027e-04      0.127627     0.127691
+      inoculation 8.568028e-07        9.922457e-07      0.000255     0.000296
+   seeding_regime 2.929842e-03        2.922461e-03      0.871760     0.871689
+figure1 exported
+figure2 exported
+figure3 exported
+figure4 exported
+figure5 exported
+figure6 exported
+..........                                                               [100%]
+10 passed in 3.24s
+Reproduction completed: D:\202608\Ͷ�嵽INFORMATION PROCESSING & MANAGEMENT\.review\ipm_reproduction_check_20260916

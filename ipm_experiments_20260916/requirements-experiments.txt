@@ -1,0 +1,10 @@
+# Environment actually used: Python 3.13.7 on Windows.
+# requirements.txt is retained from the old project for provenance only.
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.16.1
+matplotlib==3.10.6
+networkx==3.5
+PyYAML==6.0.3
+Markdown==3.9
+pytest>=8,<10

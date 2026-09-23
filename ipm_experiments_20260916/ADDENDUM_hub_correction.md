@@ -1,0 +1,9 @@
+# Hub selector sensitivity addendum
+
+Prepared 2026-09-16 after inspecting the original source and eight archived replay samples, before running the complete corrected-archive sensitivity. The E1-E3 extension matrices had finished computing; their aggregate results had not yet been inspected. This is a documented implementation-driven addition, not part of the earlier fixed four-experiment matrix.
+
+The frozen hub selector takes positional indices from the degree iterator and uses them as agent IDs. SBM graph relabeling preserves blockwise node insertion order, which differs from numeric agent order. In two verified archived SBM examples, 47/50 and 46/50 selected agents fell below the top-50 degree cutoff. The six other sampled networks used numeric node order; their degree thresholds were correct, with some different choices among tied nodes.
+
+E5 will replay every original hub-inoculation row (40,320 rows, one third of the frozen 120,960-row archive) using the corrected explicit-node-ID, descending-degree, ascending-node-ID tie-breaking selector already specified in E2. All other code, configuration values and original named seeds remain fixed. This combines an ID-mapping correction with explicit tie handling; differences on non-SBM topologies can reflect ties. Report these separately rather than attributing all changes to the SBM bug.
+
+Create a separate corrected-sensitivity archive by replacing only these rows in a copy of the original archive. Do not overwrite original data, original published results or manuscript. Recompute complete-U point allocations for all designs and primary outcomes, compare with the original tables, and record whether centered-span ordering and multi-anchor findings change. The purpose is to determine which original results require replacement before submission. These 40,320 model evaluations are correction runs, not additional independent evidence or new design cells.

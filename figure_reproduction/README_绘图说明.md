@@ -1,0 +1,58 @@
+# IPM 修订图表与 Python 复现包
+
+本包生成主文 Figure 1–7 和补充材料 Figure S1–S5。输入来自已经核验的仿真结果，不运行新实验，也不连接网络。
+
+## 使用方法
+
+使用 Python 3.12 环境，在解压后的 `figure_reproduction` 文件夹运行：
+
+```powershell
+python -m pip install -r requirements.txt
+python plot_all_figures.py
+```
+
+单独生成图3和图7：
+
+```powershell
+python plot_all_figures.py --figures 3 7
+```
+
+仅导出矢量版本，或指定其他目录：
+
+```powershell
+python plot_all_figures.py --formats pdf eps --output-dir output_vector
+```
+
+`plot_all_figures.py` 是唯一入口；请同时保留它旁边的 `supplement_plots.py`，后者提供五张补充图的基础绘图函数，由入口脚本统一设置字体、尺寸、术语及导出参数。
+
+## 文件与用途
+
+- `figures/*.pdf` 和 `figures/*.eps`：投稿用矢量图。每张宽6.5英寸，包含字体；图7的色块和色标也保留为矢量元素。
+- `figures/*.png`：600 dpi、3900像素宽的论文阅读用图，已嵌入本次Word版本。
+- `figures/*.svg`：便于继续编辑的矢量副本。
+- `figures/*_source.csv`：每张图对应的数值与筛选范围。图1为概念说明记录，不是观测数据。
+- `data/`：13张核验后的输入表。
+- `data_manifest.json`：输入表的SHA256。默认数据目录的文件发生变化时，脚本停止并提示；如有意使用新数据，请明确指定另一个数据目录。
+- `VALIDATION.json`、`PACKAGE_MANIFEST.json`：核验记录和包内文件清单。
+
+## 必须保留的统计语义
+
+图2(a,c)和图3的须线是distinct-pair重采样的2.5%–97.5%敏感性范围，不能改称校准的95%置信区间。图2(b)为描述性均值，不附带区间。
+
+图4–6与补充图S1–S2的区间是配对复制块均值的未作多重比较调整的95% t区间，表达Monte Carlo精度。图4先在每个复制块内平均四种拓扑，再对30个块计算均值和区间。
+
+图3主面板采用共同绝对横轴；右侧小图是明确标注尺度的局部放大。百分比的分母为各自网格总量，不是原始C-D50基准总量。
+
+图5同一行的两种剂量采用相同纵轴；两行对应不同对比类别，纵轴不同。正值表示第一种策略在规定模型中带来额外的位移减小，不等于现实社会收益。
+
+图6的纵轴因模型和结果窗口而不同，零线保留；连接线只连接实际计算的离散剂量点。
+
+图7共有96格。格内数字为实际覆盖率，颜色表示覆盖率减去95%的百分点差；色标范围为−12至+12，以0为中性中心。黑框表示逐格95% Wilson区间不包含95%，不是经过多重比较校正的显著性检验。每格使用500个已生成的数据集；不同因素和区间方法共用其所属设置的数据集，不代表96组彼此独立的实验。64格满足黑框条件。
+
+图3–6的绘图数值和区间与上一版逐点核对一致，图7的Wilson上下界还依据二项分布公式独立重算。保留负估计和非零小量，不为了视觉效果扩大区间或截断为零。
+
+## 出版尺寸
+
+本版按Word的6.5英寸插图宽度设计，普通图中文字至少8 pt，数学上标按数学排版缩小。Arial为主要字体，数学符号由数学字体排版。如果排版人员改变图片宽度，应同时复查最终字号。
+
+投稿时建议上传各图的PDF或EPS文件。PNG用于Word阅读，不作为纯线图满足1000 dpi要求的替代声明。依据：[Elsevier图形格式](https://www.elsevier.com/about/policies-and-standards/author/artwork-and-media-instructions/artwork-formats-checklist)、[图形尺寸](https://www.elsevier.com/about/policies-and-standards/author/artwork-and-media-instructions/artwork-sizing)。

@@ -1,0 +1,209 @@
+{
+  "passed": true,
+  "checks": {
+    "original_model_unchanged": true,
+    "original_archive_unchanged": true,
+    "packaged_original_archive_same": true,
+    "frozen_model_same": true,
+    "frozen_estimator_same": true,
+    "archived_sample_replays": true,
+    "new_matrix_integrity": true,
+    "nonhub_rows_unchanged": true,
+    "original_direct_exposures_unchanged": true,
+    "full_reproduction_numeric_and_trajectory_equivalence": true,
+    "ratio_filter_counts": true,
+    "six_complete_figure_exports": true,
+    "representative_narrative_numbers": true
+  },
+  "compared_outputs": [
+    {
+      "file": "E1_allocations.csv",
+      "rows": 200,
+      "equivalent": true
+    },
+    {
+      "file": "E1_endpoints.csv",
+      "rows": 72,
+      "equivalent": true
+    },
+    {
+      "file": "E1_runs.csv.gz",
+      "rows": 6480,
+      "equivalent": true
+    },
+    {
+      "file": "E1_schedule_contrasts.csv",
+      "rows": 24,
+      "equivalent": true
+    },
+    {
+      "file": "E1_seed_manifest.csv",
+      "rows": 6480,
+      "equivalent": true
+    },
+    {
+      "file": "E2_paired_benefits.csv.gz",
+      "rows": 9600,
+      "equivalent": true
+    },
+    {
+      "file": "E2_policy_benefits.csv",
+      "rows": 320,
+      "equivalent": true
+    },
+    {
+      "file": "E2_policy_benefits_by_topology.csv",
+      "rows": 1280,
+      "equivalent": true
+    },
+    {
+      "file": "E2_policy_contrast_blocks.csv.gz",
+      "rows": 5280,
+      "equivalent": true
+    },
+    {
+      "file": "E2_policy_contrasts.csv",
+      "rows": 176,
+      "equivalent": true
+    },
+    {
+      "file": "E2_policy_contrasts_by_topology.csv",
+      "rows": 704,
+      "equivalent": true
+    },
+    {
+      "file": "E2_policy_endpoints.csv",
+      "rows": 320,
+      "equivalent": true
+    },
+    {
+      "file": "E2_runs.csv.gz",
+      "rows": 9600,
+      "equivalent": true
+    },
+    {
+      "file": "E2_seed_manifest.csv",
+      "rows": 9600,
+      "equivalent": true
+    },
+    {
+      "file": "E3_allocations.csv",
+      "rows": 136,
+      "equivalent": true
+    },
+    {
+      "file": "E3_endpoints.csv",
+      "rows": 72,
+      "equivalent": true
+    },
+    {
+      "file": "E3_runs.csv.gz",
+      "rows": 4560,
+      "equivalent": true
+    },
+    {
+      "file": "E3_schedule_contrasts.csv",
+      "rows": 24,
+      "equivalent": true
+    },
+    {
+      "file": "E3_seed_manifest.csv",
+      "rows": 4560,
+      "equivalent": true
+    },
+    {
+      "file": "E4_dataset_estimates.csv.gz",
+      "rows": 48000,
+      "equivalent": true
+    },
+    {
+      "file": "E4_validation_summary.csv",
+      "rows": 96,
+      "equivalent": true
+    },
+    {
+      "file": "E5_corrected_archive_120960.csv.gz",
+      "rows": 120960,
+      "equivalent": true
+    },
+    {
+      "file": "E5_corrected_bootstrap_ranges.csv",
+      "rows": 1200,
+      "equivalent": true
+    },
+    {
+      "file": "E5_corrected_hub_runs.csv.gz",
+      "rows": 40320,
+      "equivalent": true
+    },
+    {
+      "file": "E5_correction_impact.csv",
+      "rows": 500,
+      "equivalent": true
+    },
+    {
+      "file": "E5_original_vs_corrected_allocations.csv",
+      "rows": 300,
+      "equivalent": true
+    },
+    {
+      "file": "E5_run_differences.csv.gz",
+      "rows": 201600,
+      "equivalent": true
+    }
+  ],
+  "figure_exports": [
+    {
+      "file": "Fig1_crossed_attribution.png",
+      "width": 3214,
+      "height": 1174,
+      "pdf_present": true,
+      "svg_present": true,
+      "source_csv_present": true
+    },
+    {
+      "file": "Fig2_timing_and_outcomes.png",
+      "width": 3334,
+      "height": 2134,
+      "pdf_present": true,
+      "svg_present": true,
+      "source_csv_present": true
+    },
+    {
+      "file": "Fig3_governance_comparisons.png",
+      "width": 3334,
+      "height": 2164,
+      "pdf_present": true,
+      "svg_present": true,
+      "source_csv_present": true
+    },
+    {
+      "file": "Fig4_null_factor_bias.png",
+      "width": 3634,
+      "height": 1204,
+      "pdf_present": true,
+      "svg_present": true,
+      "source_csv_present": true
+    },
+    {
+      "file": "Fig5_interval_coverage.png",
+      "width": 3633,
+      "height": 1834,
+      "pdf_present": true,
+      "svg_present": true,
+      "source_csv_present": true
+    },
+    {
+      "file": "Fig6_source_correction.png",
+      "width": 3334,
+      "height": 1234,
+      "pdf_present": true,
+      "svg_present": true,
+      "source_csv_present": true
+    }
+  ],
+  "visual_inspection": "All six rendered PNGs inspected; labels, axes, legends and numeric source scales checked.",
+  "full_reproduction_directory": "D:\\202608\\投稿到INFORMATION PROCESSING & MANAGEMENT\\.review\\ipm_reproduction_check_20260916",
+  "numeric_rtol": 1e-12,
+  "numeric_atol": 1e-14
+}

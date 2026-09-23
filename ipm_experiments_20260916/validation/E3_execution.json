@@ -1,0 +1,8 @@
+{
+  "suite": "E3",
+  "rows": 4560,
+  "replications": 30,
+  "elapsed_seconds": 8.151612799999384,
+  "unique_run_ids": 4560,
+  "outcome_finite": true
+}

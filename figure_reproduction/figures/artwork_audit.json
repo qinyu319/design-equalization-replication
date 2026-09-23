@@ -1,0 +1,74 @@
+{
+  "Fig01_audit_framework": {
+    "width_inches": 6.5,
+    "height_inches": 3.5,
+    "minimum_font_pt": 8.0,
+    "source_rows": 7
+  },
+  "Fig02_corrected_original": {
+    "width_inches": 6.5,
+    "height_inches": 3.45,
+    "minimum_font_pt": 8.0,
+    "source_rows": 200
+  },
+  "Fig03_crossed_attribution": {
+    "width_inches": 6.5,
+    "height_inches": 3.7,
+    "minimum_font_pt": 8.0,
+    "source_rows": 8
+  },
+  "Fig04_dose_strength_response": {
+    "width_inches": 6.5,
+    "height_inches": 4.55,
+    "minimum_font_pt": 8.5,
+    "source_rows": 54
+  },
+  "Fig05_governance_comparisons": {
+    "width_inches": 6.5,
+    "height_inches": 5.2,
+    "minimum_font_pt": 8.0,
+    "source_rows": 24
+  },
+  "Fig06_timing_and_outcomes": {
+    "width_inches": 6.5,
+    "height_inches": 4.7,
+    "minimum_font_pt": 8.0,
+    "source_rows": 48
+  },
+  "Fig07_interval_coverage": {
+    "width_inches": 6.5,
+    "height_inches": 6.75,
+    "minimum_font_pt": 8.0,
+    "source_rows": 96
+  },
+  "FigS01_all_policy_benefits": {
+    "width_inches": 6.5,
+    "height_inches": 3.875,
+    "minimum_font_pt": 8.0,
+    "source_rows": 60
+  },
+  "FigS02_topology_contrasts": {
+    "width_inches": 6.5,
+    "height_inches": 4.375,
+    "minimum_font_pt": 8.0,
+    "source_rows": 32
+  },
+  "FigS03_null_factor_bias": {
+    "width_inches": 6.5,
+    "height_inches": 2.4375,
+    "minimum_font_pt": 8.0,
+    "source_rows": 24
+  },
+  "FigS04_rmse_comparison": {
+    "width_inches": 6.5,
+    "height_inches": 5.5,
+    "minimum_font_pt": 8.0,
+    "source_rows": 96
+  },
+  "FigS05_source_correction": {
+    "width_inches": 6.5,
+    "height_inches": 2.3636363636363638,
+    "minimum_font_pt": 8.0,
+    "source_rows": 12
+  }
+}

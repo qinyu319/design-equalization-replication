@@ -1,0 +1,135 @@
+{
+  "unchanged_source_tables": 13,
+  "coverage": {
+    "cells": 96,
+    "datasets_per_cell": 500,
+    "wilson_marked_cells": 64,
+    "deviation_pp_range": [
+      -11.0,
+      5.0
+    ],
+    "wilson_bounds_independently_recomputed": true
+  },
+  "figure_point_and_interval_regression": "Figures 3–6 agree with previously reviewed per-point source tables",
+  "independent_directory_reproduction": "All 12 figure source tables match",
+  "minimum_normal_lettering_pt": 8,
+  "documents": [
+    {
+      "file": "IPM_Artwork_Revised_Anonymous_Manuscript.docx",
+      "sha256": "e97751dae71ee3240b54b250bd4d5247da32d0a7b499ffefd92b0e33482c5410",
+      "figures": 7,
+      "tables": 2,
+      "equations": 22
+    },
+    {
+      "file": "IPM_Artwork_Revised_Supplementary_Material.docx",
+      "sha256": "280cfc2f85abd894643df3414ed89f5c5851d530b85e9795054035b41e19d4fe",
+      "figures": 5,
+      "tables": 10,
+      "equations": 12
+    }
+  ],
+  "references_unchanged": 43,
+  "artwork": [
+    {
+      "file": "Fig01_audit_framework",
+      "width_inches": 6.5,
+      "png_width_px": 3900,
+      "effective_dpi": 600,
+      "raster_images_in_pdf": 0
+    },
+    {
+      "file": "Fig02_corrected_original",
+      "width_inches": 6.5,
+      "png_width_px": 3900,
+      "effective_dpi": 600,
+      "raster_images_in_pdf": 0
+    },
+    {
+      "file": "Fig03_crossed_attribution",
+      "width_inches": 6.5,
+      "png_width_px": 3900,
+      "effective_dpi": 600,
+      "raster_images_in_pdf": 0
+    },
+    {
+      "file": "Fig04_dose_strength_response",
+      "width_inches": 6.5,
+      "png_width_px": 3900,
+      "effective_dpi": 600,
+      "raster_images_in_pdf": 0
+    },
+    {
+      "file": "Fig05_governance_comparisons",
+      "width_inches": 6.5,
+      "png_width_px": 3900,
+      "effective_dpi": 600,
+      "raster_images_in_pdf": 0
+    },
+    {
+      "file": "Fig06_timing_and_outcomes",
+      "width_inches": 6.5,
+      "png_width_px": 3900,
+      "effective_dpi": 600,
+      "raster_images_in_pdf": 0
+    },
+    {
+      "file": "Fig07_interval_coverage",
+      "width_inches": 6.5,
+      "png_width_px": 3900,
+      "effective_dpi": 600,
+      "raster_images_in_pdf": 0
+    },
+    {
+      "file": "FigS01_all_policy_benefits",
+      "width_inches": 6.5,
+      "png_width_px": 3900,
+      "effective_dpi": 600,
+      "raster_images_in_pdf": 0
+    },
+    {
+      "file": "FigS02_topology_contrasts",
+      "width_inches": 6.5,
+      "png_width_px": 3900,
+      "effective_dpi": 600,
+      "raster_images_in_pdf": 0
+    },
+    {
+      "file": "FigS03_null_factor_bias",
+      "width_inches": 6.5,
+      "png_width_px": 3900,
+      "effective_dpi": 600,
+      "raster_images_in_pdf": 0
+    },
+    {
+      "file": "FigS04_rmse_comparison",
+      "width_inches": 6.5,
+      "png_width_px": 3900,
+      "effective_dpi": 600,
+      "raster_images_in_pdf": 0
+    },
+    {
+      "file": "FigS05_source_correction",
+      "width_inches": 6.5,
+      "png_width_px": 3900,
+      "effective_dpi": 600,
+      "raster_images_in_pdf": 0
+    }
+  ],
+  "visual_review": {
+    "main_pages": 38,
+    "supplementary_pages": 22,
+    "pages_inspected": 60,
+    "rendering": "Microsoft Word PDF export followed by Poppler PNG rendering; packaged renderer was unavailable because soffice.exe is missing",
+    "status": "passed",
+    "findings": "No clipping, missing glyphs, overlapping figure labels or table overflow observed. Main Table 2 and its note remain together. Repeated table headers remain visible across supplementary table page breaks.",
+    "grayscale_figures": [
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "grayscale_findings": "Markers, line patterns, numeric coverage labels and interval borders remain readable. Figure 7 direction is recoverable from the printed coverage numbers in grayscale.",
+    "limitations": "No separate color-vision-deficiency simulation performed."
+  }
+}

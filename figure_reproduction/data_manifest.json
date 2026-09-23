@@ -1,0 +1,54 @@
+[
+  {
+    "file": "data/all_corrected_allocations.csv",
+    "sha256": "30b73854034178c8dff8b05c35b5951be70471ecae275ddbd43857087b6b087f"
+  },
+  {
+    "file": "data/all_corrected_ranges.csv",
+    "sha256": "c4d98ad8c040b44bcc9f7d9841872dae1e1ba47e2bdbf0cb7095d6a0c2e9f8dd"
+  },
+  {
+    "file": "data/corrected_original_endpoints.csv",
+    "sha256": "cce914eb5149510a7351f0159c402b2d8a36c432ff2154639b55328268936a92"
+  },
+  {
+    "file": "data/E1_allocations.csv",
+    "sha256": "e34baa8718b0001e8f8fd9e81349f1d723f5fe74ce850bcad22dd9215d4b92e2"
+  },
+  {
+    "file": "data/E1_schedule_contrasts.csv",
+    "sha256": "282c9b11c3d482dad8b9b5195d706bd3bc38431e97fb3f3de5b8c23dbafd0393"
+  },
+  {
+    "file": "data/E1_terminal_runs.csv",
+    "sha256": "ee13601bf2c840444d8b6cdb2504b8c0979e640172ce23fccdd167f3d5f70004"
+  },
+  {
+    "file": "data/E2_policy_benefits.csv",
+    "sha256": "b6d83ad1a939ad90f5b947db05d1e80bcc717e9becd4614bf42dde7a09ebc76b"
+  },
+  {
+    "file": "data/E2_policy_contrasts.csv",
+    "sha256": "88fe4c84f0cbaf9f13f7db925255e3d58029c5a516791bb0bc14c8de7c127865"
+  },
+  {
+    "file": "data/E2_policy_contrasts_by_topology.csv",
+    "sha256": "004f99270d7289e1ecc3176db5e5889b677a7f575c824950692d3e49ab04f554"
+  },
+  {
+    "file": "data/E3_schedule_contrasts.csv",
+    "sha256": "cb145105f76088d250eaffc43adeac8fbd7e4977e3b847c9f5ddff4696020d16"
+  },
+  {
+    "file": "data/E4_validation_summary.csv",
+    "sha256": "5c369fe4d60ab54faa9db6f45ebf8101613b04987b83591312b93b65fa1b7e27"
+  },
+  {
+    "file": "data/E5_original_vs_corrected_allocations.csv",
+    "sha256": "9de174d34e39c16577e9f737e80909180fa6718a48bbf997f4d30be56523b021"
+  },
+  {
+    "file": "data/hub_selector_audit.csv",
+    "sha256": "00833efc0deb7e00995d4cb0a81f61743482d4e93926cda4f89bf2bc1eb654b3"
+  }
+]
