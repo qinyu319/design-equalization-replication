@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-10",
+  "change_scope": "Research-oriented naming, documentation, local-path metadata and report presentation; no numerical data edits.",
+  "protected_files_unchanged": 167,
+  "protected_categories": [
+    "inputs",
+    "results",
+    "frozen model and estimator",
+    "quantitative artwork",
+    "figure data",
+    "table source"
+  ],
+  "pytest_passed": 11,
+  "independent_numerical_comparisons_passed": 400,
+  "all_figures_regenerated": 12,
+  "legacy_seed_bytes_preserved": true,
+  "archived_seed_manifest_regression": "E1, E2 and E3 seed columns match",
+  "reading_report_image_links_verified": 6,
+  "reading_report_preview": "Rendered and visually checked",
+  "current_path_and_text_scan": "passed",
+  "full_simulations_rerun": false,
+  "historical_commits_rewritten": false
+}

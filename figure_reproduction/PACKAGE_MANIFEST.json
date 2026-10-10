@@ -5,11 +5,11 @@
   },
   {
     "file": "plot_all_figures.py",
-    "sha256": "eaba6d297bc9bbfead9a23ff25e72e116e9180dac78d0980454a85cd4376e534"
+    "sha256": "d3bf179036db72e33c23065a2cdd5bedeb975a59f1d5d7d9fae1d7b7c81dd5c8"
   },
   {
-    "file": "README_\u7ed8\u56fe\u8bf4\u660e.md",
-    "sha256": "e9a9f89410302a31bec2b71f5d8669fc9796167f95e96af357220cfb0bb7551b"
+    "file": "README_绘图说明.md",
+    "sha256": "8da71751b12b56f4b84297f351aa424780f64189ef72949c9041eead6a3b0689"
   },
   {
     "file": "requirements.txt",
@@ -17,11 +17,11 @@
   },
   {
     "file": "supplement_plots.py",
-    "sha256": "46c38c5bb4f76c1ae78106e87982e3390a554e5b2ffdd3c2bc0a71a279652f1d"
+    "sha256": "c1873f53e8e1776f9c2aa017bfe1c22c34b6411490e11362d9898903548ada66"
   },
   {
     "file": "VALIDATION.json",
-    "sha256": "1637ac1d502a9c7ffa389a0e82feaf66db82ee26bc680222749b0dad5f871a8e"
+    "sha256": "5babf0181b4506374e3459ccf163c6e8f5a4b2565bfa78d4d022c33d682a8037"
   },
   {
     "file": "data/all_corrected_allocations.csv",

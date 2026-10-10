@@ -4,7 +4,7 @@ import itertools,math,json,argparse
 import numpy as np
 import pandas as pd
 from scipy.stats import t
-ROOT=Path(__file__).resolve().parents[1]; SRC=ROOT.parent/'ipm_experiments_20260916/results'
+ROOT=Path(__file__).resolve().parents[1]; SRC=ROOT.parent/'experiments/results'
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--results-dir',type=Path,default=SRC,help='Path to results/ in the computational reproduction package')
 args=parser.parse_args();SRC=args.results_dir

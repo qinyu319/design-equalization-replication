@@ -1,0 +1,304 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>内容治理仿真补充实验结果与修改建议</title><style>
+:root{color-scheme:light}body{font-family:"Microsoft YaHei","Segoe UI",sans-serif;color:#243343;background:#f1f4f7;margin:0;line-height:1.8}
+main{max-width:1080px;margin:30px auto;background:white;padding:36px 50px;box-shadow:0 3px 20px #0001;border-top:6px solid #0072b2}
+h1{font-size:27px;line-height:1.4;color:#143a55}h2{margin-top:2.2em;border-bottom:1px solid #dce5eb;padding-bottom:.35em;font-size:22px;color:#143a55}h3{font-size:18px}
+a{color:#0072b2}code{font-family:Consolas,monospace;font-size:.9em;background:#f2f5f7;padding:2px 5px;overflow-wrap:anywhere}pre{padding:15px;background:#f2f5f7;overflow:auto}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:20px 0}th{background:#eaf2f7;text-align:left}td,th{border:1px solid #dce4e9;padding:9px 12px;vertical-align:top}
+figure{margin:25px 0;padding:12px;border:1px solid #dde5eb}img{width:100%;height:auto}figcaption{text-align:center;color:#536b7c;font-size:14px}
+.note{background:#eaf2f7;padding:14px 20px;border-left:4px solid #0072b2}.english{font-family:Georgia,"Times New Roman",serif;line-height:1.65}
+@media(max-width:750px){main{padding:22px;margin:0}table{display:block;overflow:auto}h1{font-size:24px}}@media print{body{background:white}main{margin:0;box-shadow:none;padding:0}figure,table{break-inside:avoid}}
+</style><main><p class="note">实际运行结果 · 2026-09-16 · 本地阅读版。可复现代码、数据和图表源文件在同一实验目录中。仿真结果不等于真实LLM安全或治理有效性的经验验证。</p><h1 id="_1">内容治理仿真补充实验：实际结果与论文修改建议</h1>
+<p>完成日期：2026-09-16。研究主题：<strong>内容治理仿真中的设计均衡、机制归因与统计验证</strong>。</p>
+<p><strong>已经完成四组补充实验，以及原始 hub 干预代码的纠错重算。新增结果支持把论文定位为“内容治理仿真的设计与归因审计”，同时要求收窄关于时序不重要、治理措施有效性及统计区间可靠性的论断。</strong> 本文件中的数值来自实际运行，不是预期结果或示例数字。原论文 Word、原代码和原始数据均未覆盖。</p>
+<h2 id="1">1. 完成了哪些工作</h2>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>回答的问题</th>
+<th style="text-align: right;">本次实际计算量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E1</td>
+<td>把投放剂量与时序独立交叉后，归因是否变化？加入回归机制后是否仍成立？</td>
+<td style="text-align: right;">6,480 次 ABM 运行</td>
+</tr>
+<tr>
+<td>E2</td>
+<td>标签保留/丢失、接种覆盖与依从性、随机/高连接度定向干预怎样影响模拟结果？</td>
+<td style="text-align: right;">7,200 次主实验 + 2,400 次旧选择器敏感性运行</td>
+</tr>
+<tr>
+<td>E3</td>
+<td>换成持续同伴平均的另一类动力学后，审计框架是否仍能识别时序作用？</td>
+<td style="text-align: right;">4,320 次有输入运行 + 240 次无输入对照</td>
+</tr>
+<tr>
+<td>E4</td>
+<td>在异方差及相关噪声下，估计偏差、负值频率、区间覆盖率怎样？</td>
+<td style="text-align: right;">12,000 个已知真值数据集；其中 6,000 个评估区间覆盖</td>
+</tr>
+<tr>
+<td>E5</td>
+<td>原始 hub 选择器修正后，原论文的数值和结论是否改变？</td>
+<td style="text-align: right;">重算 40,320 次 hub 运行；生成 120,960 行修正版存档</td>
+</tr>
+</tbody>
+</table>
+<p>E1–E3 合计 20,640 次模型运行，其中包含对照及旧实现敏感性分析。E5 是已有运行的纠错重放，<strong>不能将其当成新增独立样本与原来的120,960次相加来宣传证据量</strong>。所有新增模型实验均为 N=1,000、T=50、30 个独立重复块；智能体数不是统计推断的独立样本数。</p>
+<h2 id="2-hub">2. 必须先处理：原 hub 选择器存在节点编号错误</h2>
+<p>原代码先取 <code>g.degree()</code> 的度数数组，再把排序后的位置当成节点编号。SBM 经过节点重标记后，节点遍历顺序不等于智能体编号，因此原程序可能把非 hub 节点作为 hub 接种。</p>
+<p>在重放检查的两个 SBM 样本中，每次选择50人，旧算法分别有47人和46人的度数低于“最高50个节点”的度数门槛。对应的平均度数分别为5.64与6.14；按真实节点编号修正后为11.58与11.64。新实现按“度数降序、同度数时节点编号升序”选择；其他网络也可能因并列度数的规则变化而产生输出差异，因此已重算全部网络的 hub 单元。</p>
+<p>8个原始存档样本的旧实现重放全部通过。纠错后的40,320次运行使用原有配置和原始种子，另外80,640行非 hub 运行完全保持不变；直接投放事件数也全部不变。</p>
+<h3 id="_2">对原稿核心数值的影响</h3>
+<p>以下均为 mean total shift，q 的分母是<strong>各自版本的 C-D50 总变异</strong>。百分比与原始比例不能混用。</p>
+<table>
+<thead>
+<tr>
+<th>原设计</th>
+<th style="text-align: right;">修正前时序 q</th>
+<th style="text-align: right;">修正后时序 q</th>
+<th style="text-align: right;">修正后总变异保留率 τ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C-D50</td>
+<td style="text-align: right;">87.1760%</td>
+<td style="text-align: right;">87.1689%</td>
+<td style="text-align: right;">100%</td>
+</tr>
+<tr>
+<td>CS-0</td>
+<td style="text-align: right;">0.0241112%</td>
+<td style="text-align: right;">0.0241654%</td>
+<td style="text-align: right;">4.9109%</td>
+</tr>
+<tr>
+<td>E-SD</td>
+<td style="text-align: right;">0.00000283031%</td>
+<td style="text-align: right;">0.00000254746%</td>
+<td style="text-align: right;">0.00182535%</td>
+</tr>
+<tr>
+<td>PC-M05</td>
+<td style="text-align: right;">0.690119%</td>
+<td style="text-align: right;">0.691040%</td>
+<td style="text-align: right;">0.883112%</td>
+</tr>
+</tbody>
+</table>
+<p>原文“基准中时序占比很高、等剂量后显著缩小”的主要数值格局仍在。但不能因此保留错误实现：正文、补充材料、表格和复现包应统一使用同一个修正版。完整25设计×3结局×4因素的修正结果见 <code>results/E5_original_vs_corrected_allocations.csv</code>；区间见 <code>E5_corrected_bootstrap_ranges.csv</code>。</p>
+<p><strong>修改位置：</strong> Methods 中明确 hub 的节点编号及并列度数规则；Results 更新依赖旧存档的数值；附录增加 implementation audit，披露旧版与新版差异。修正版存档见 <code>results/E5_corrected_archive_120960.csv.gz</code>，不要误用 <code>inputs/archive_reference</code> 中保留的历史版本。</p>
+<h2 id="3-e1">3. E1：剂量与时序独立交叉，补足最重要的识别证据</h2>
+<p>交叉因素为4种网络、剂量0.05/0.50/0.95、3种时序、强度0.06/0.14/0.18；分别在回归系数 μ=0 和0.05下分析。此处剂量指“人均累计直接投放事件数”，不是独立触达人数。强度是数值假设，不能解释成实测的AI质量水平。</p>
+<h3 id="_3">完整交叉设计中的终点变异归因</h3>
+<table>
+<thead>
+<tr>
+<th>动力学条件</th>
+<th style="text-align: right;">剂量</th>
+<th style="text-align: right;">时序</th>
+<th style="text-align: right;">强度</th>
+<th style="text-align: right;">网络</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>μ=0</td>
+<td style="text-align: right;">70.5684%</td>
+<td style="text-align: right;">0.2060%</td>
+<td style="text-align: right;">29.2152%</td>
+<td style="text-align: right;">0.0104%</td>
+</tr>
+<tr>
+<td>μ=0.05</td>
+<td style="text-align: right;">39.4007%</td>
+<td style="text-align: right;">44.1365%</td>
+<td style="text-align: right;">16.4565%</td>
+<td style="text-align: right;">0.0063%</td>
+</tr>
+</tbody>
+</table>
+<p>表中百分比为<strong>各自交叉设计内部</strong>的 complete-U 分配占比，不是原稿基准归一化 q，也不是干预效应占比。不能与原基准的87.17%直接作同分母比较。</p>
+<p>在 μ=0 的数据中，只抽取“单次→低剂量、突发→中剂量、连续→高剂量”的绑定子设计时，时序标签承接约70.64%的分配；反向绑定时约71.31%。这两个视图来自同一响应网格，不是额外实验。它们说明合并标签携带了剂量差异；<strong>不是因果中介分解，也不是绑定偏差的唯一估计</strong>。</p>
+<p>等剂量0.50时，连续投放相对单次投放的平均终点变化差异为：</p>
+<table>
+<thead>
+<tr>
+<th>条件</th>
+<th style="text-align: right;">连续减单次</th>
+<th style="text-align: right;">95% 蒙特卡洛均值区间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>μ=0</td>
+<td style="text-align: right;">−0.001794</td>
+<td style="text-align: right;">[−0.001980, −0.001607]</td>
+</tr>
+<tr>
+<td>μ=0.05</td>
+<td style="text-align: right;">+0.009608</td>
+<td style="text-align: right;">[+0.009536, +0.009680]</td>
+</tr>
+</tbody>
+</table>
+<p>无回归模型中的时序贡献很小，但不等于严格为零。加入回归后，时序方向和相对重要性都改变。建议把结论写成：<strong>归因必须与投放剂量、动力学记忆及观察窗口共同解释；设计均衡能检查混合因素，但不能先验消除真实时序机制。</strong></p>
+<p>正文建议放 Fig1；Fig2 的上半部分同时展示终点与时间平均变化，避免只选择最有利的终点。所有结局及各剂量结果保留在 <code>E1_allocations.csv</code>、<code>E1_endpoints.csv</code> 和 <code>E1_schedule_contrasts.csv</code>。</p>
+<h2 id="4-e2">4. E2：把主题落到可操作的治理假设</h2>
+<p>固定强度0.14，交叉两档剂量、两种时序及四种网络。比较标签衰减 λ=0.3/0.7、二次传播时标签保留/丢失，随机/hub接种、覆盖预算5%/20%、依从性50%/100%，以及两种组合干预。接种后的易感性乘以0.2。</p>
+<p>这里的“收益”严格定义为 <strong>无干预结局 − 有干预结局</strong>；随机与hub按相同覆盖和依从性配对，标签保留与丢失按相同 λ 配对。以下例子均为剂量0.50、连续投放、跨网络等权平均的 mean total shift：</p>
+<table>
+<thead>
+<tr>
+<th>配对比较</th>
+<th style="text-align: right;">额外减少的终点变化</th>
+<th style="text-align: right;">95% 蒙特卡洛均值区间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hub 对随机，5%覆盖、100%依从</td>
+<td style="text-align: right;">0.000504</td>
+<td style="text-align: right;">[0.000317, 0.000691]</td>
+</tr>
+<tr>
+<td>hub 对随机，20%覆盖、100%依从</td>
+<td style="text-align: right;">0.000988</td>
+<td style="text-align: right;">[0.000762, 0.001215]</td>
+</tr>
+<tr>
+<td>标签保留对标签丢失，λ=0.3</td>
+<td style="text-align: right;">0.001429</td>
+<td style="text-align: right;">[0.001382, 0.001476]</td>
+</tr>
+<tr>
+<td>标签保留对标签丢失，λ=0.7</td>
+<td style="text-align: right;">0.002906</td>
+<td style="text-align: right;">[0.002799, 0.003012]</td>
+</tr>
+</tbody>
+</table>
+<p>在剂量0.05、连续投放、5%覆盖和100%依从时，hub优势只有约0.00000488，区间[−0.0000316, 0.0000413]跨零，不能概括成“hub在所有场景稳定优于随机”。Fig3 汇报全部预算、依从性和标签对照，而不仅是上述例子。分网络及其他结局也已保存。</p>
+<p>这组实验最适合贡献为“治理评估的假设压力测试”：标签是否随二次传播保留、覆盖率与依从性怎样设定，会改变模型预测。<strong>衰减标签、降低易感性本来就是模型设定，因此不能把方向符合设定解释成发现了标签或接种的真实因果有效性。</strong> 绝对观点变化下降也不天然等于危害下降；若采用错误信息情境，应明确目标内容在该假设场景中被定义为有害。</p>
+<p>不同治理措施缺少统一资源成本，因此不能把标签、接种及组合干预排成“成本效益榜”。本次没有外部平台数据、人工标注、LLM生成质量评测或真实用户实验。</p>
+<h2 id="5-e3">5. E3：第二类动力学提供边界检验，不能声称经验外部验证</h2>
+<p>另行实现持续同伴平均与初始意见锚定的模型，灵感来自 Friedkin–Johnsen 的社会影响框架；本文的外部信息耦合是本次明确写出的扩展，并非复现某篇论文的全部模型。原始来源：<a href="https://doi.org/10.1080/0022250X.1990.9990069">Friedkin &amp; Johnsen, 1990</a>。精确更新式与对照定义见 <code>MODEL_SPECIFICATION.md</code>。</p>
+<p>关键设计是每个有输入运行都减去同一网络、初始状态、锚定强度的<strong>无外部输入轨迹</strong>，避免把自然的同伴收敛误认为内容造成的变化。240个无输入对照在相对结局上严格为零。</p>
+<p>锚定系数 a=0.2 和0.8 时，完整交叉设计中的时序分配分别为60.55%和60.42%；各自固定剂量的设计中约为81.81%–82.11%。这与原模型 μ=0 的弱时序分配形成对照。</p>
+<p>以 a=0.2、剂量0.50为例，连续投放相对单次的终点变化增加0.004759，95%蒙特卡洛区间[0.004698, 0.004819]；但时间平均变化减少0.000434，区间[−0.000463, −0.000404]。早期投放有更长累计作用时间，持续投放在末期仍有输入，两个结局回答不同问题。</p>
+<p>建议作为“Generality and boundary conditions”小节，强调框架在不同机制下允许得出不同结论。不能写成第二模型“验证了时序不重要”，也不宜称为真实世界 external validation。</p>
+<h2 id="6-e4">6. E4：估计器可以校正点估计，但推断仍有边界</h2>
+<p>已知真值为 μ=0.8A+0.5B+0.6AB+0.3C，对应 Shapley 分配(0.82, 0.43, <strong>0.09</strong>, 0)。四种噪声条件包含异方差、共同冲击及与因素方向相关的结构化冲击；重复数为10/30/60。每一设置1,000个数据集评估偏差，前500个评估区间覆盖，每个数据集399次不同原始重复对的重采样。</p>
+<p>在结构化相关噪声、R=30、真实贡献为零的D因素上，in-sample平均分配为0.014838，complete-U为0.000313；complete-U均值的蒙特卡洛标准误为0.000475。该设置中65.3%的complete-U估计为负，因此近零时应保留负估计，不能截零后再解释成无偏。</p>
+<p>百分位区间对非零因素的经验覆盖率范围为84.0%–95.2%，对零因素为98.0%–100.0%；jackknife-normal也没有统一可靠的校准。500次覆盖评估本身存在抽样误差：结果表附带二项式蒙特卡洛标准误与Wilson区间。Fig4展示零因素点估计，Fig5完整展示各因素覆盖率，不能只摘取有利设置。</p>
+<h3 id="_4">需要修正的方法学叙述</h3>
+<p>对对称二次型矩阵 H、独立同分布重复向量 y_r、样本均值 ȳ 及按R−1分母估计的协方差 S，有严格恒等式：</p>
+<p><code>U = Σ(r≠s) y_rᵀ H y_s / [R(R−1)] = ȳᵀ H ȳ − tr(H S)/R</code>。</p>
+<p>因此，若附录J的“noise subtraction”使用完整、未正则化的样本协方差，它与complete-U是<strong>同一个有限样本估计量</strong>，不能当成相互独立的竞争方法或声称后者在该比较中独具无偏性。若只减对角噪声或采用正则化，则需要另写定义与适用条件。本次用独立的正交对比实现以及投影矩阵实现交叉验证了点估计和重采样公式。</p>
+<h2 id="7">7. 按原稿位置实施修改</h2>
+<table>
+<thead>
+<tr>
+<th>位置</th>
+<th>建议落实的修改</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>标题与摘要</td>
+<td>将贡献定位于内容治理仿真的设计审计。可考虑 “Auditing Content-Governance Simulations: Separating Assigned Exposure from Mechanism Attribution”。摘要同时写出弱时序基准和强时序边界，避免给读者普遍排序的印象。</td>
+</tr>
+<tr>
+<td>引言</td>
+<td>用“平台治理评估如何受覆盖、标签保留与投放设计影响”建立应用问题；不要只增加LLM关键词。明确研究对象是评价方法，不是一个新的大模型安全系统。</td>
+</tr>
+<tr>
+<td>研究问题</td>
+<td>增加独立剂量×时序识别、治理假设压力测试、跨动力学边界、相关噪声下的估计与区间校准四个问题。</td>
+</tr>
+<tr>
+<td>模型方法</td>
+<td>按实际代码统一激活阈值：<code>abs(delta)&gt;0.01</code>；方向性位移乘 <code>sign(0.6−initial)</code>；转换率分母为初始意见小于0的群体。标签只衰减确定性拉动项，噪声并未同步衰减。</td>
+</tr>
+<tr>
+<td>图模型描述</td>
+<td>说明ER额外连接分量，而SBM/WS未显式执行相同连通性修补；不要一概写成四类网络都强制连通。</td>
+</tr>
+<tr>
+<td>统计方法</td>
+<td>解释重复块、完全交叉的等权目标分布、交互作用的Shapley分配；区分本设计内部占比与固定基准q、ρ、τ；保留负值并对非正分母抑制比率。</td>
+</tr>
+<tr>
+<td>结果</td>
+<td>使用修正版E5更新旧数值，增加E1、E2、E3主结果；E4在正文简述局限，完整表入附录。不要把旧版和新版数值放在同一“最终”表内。</td>
+</tr>
+<tr>
+<td>讨论</td>
+<td>强调末期与累计影响的区别、治理参数的设定性、跨模型非一致性及未经验校准；不声称实际LLM安全提升。</td>
+</tr>
+<tr>
+<td>附录与数据声明</td>
+<td>增加执行矩阵、种子、实现审计、环境及校验文件；附录J把C真值0.009更正为0.09，并修正估计器关系。</td>
+</tr>
+</tbody>
+</table>
+<p>英文方法、结果、局限及6张图的图注已写入 <code>MANUSCRIPT_INSERTIONS.md</code>。这些文字仍需与全文编号及原有论证整合；本次没有把原 Word 文件自动改成最终论文稿。</p>
+<h2 id="8">8. 文件与核验</h2>
+<ul>
+<li><code>README.md</code>：一键在新目录重现的命令、文件说明。</li>
+<li><code>MODEL_SPECIFICATION.md</code>：模型公式、结局、配对、噪声与推断定义。</li>
+<li><code>figures/</code>：6张图，各含300dpi PNG、PDF、SVG及来源CSV。</li>
+<li><code>results/</code>：逐次输出、全部汇总表、修正版存档和种子。</li>
+<li><code>inputs/archive_reference/</code>：为完整复现保留的原始输入快照。</li>
+<li><code>validation/</code>：存档8例重放、矩阵完整性、选择器审计及执行信息；独立目录完整重跑后，27个结果文件的数值与轨迹均一致，10项测试再次通过。</li>
+<li><code>code/</code>：仿真、分析、作图和10项验证测试；本机已通过10项测试。</li>
+</ul>
+<p>本次计算没有对这些合成结论进行真实平台或真人校准。当前最有价值的改进是<strong>纠正实现、给出独立交叉证据、明确有效边界</strong>，而不是继续堆积相似仿真次数。</p>
+<p>可直接打开 <code>实验结果报告_阅读版.html</code> 阅读本报告、全部6张图和英文增补文字；该阅读版已在本地浏览器中检查排版。</p><h2>已生成的研究图表</h2><figure><img src="figures/Fig1_crossed_attribution.png" alt="独立交叉设计：剂量与时序的归因"><figcaption>图1 · 独立交叉设计：剂量与时序的归因</figcaption></figure><figure><img src="figures/Fig2_timing_and_outcomes.png" alt="动力学与观察窗口改变时序效应"><figcaption>图2 · 动力学与观察窗口改变时序效应</figcaption></figure><figure><img src="figures/Fig3_governance_comparisons.png" alt="匹配暴露条件下的治理比较"><figcaption>图3 · 匹配暴露条件下的治理比较</figcaption></figure><figure><img src="figures/Fig4_null_factor_bias.png" alt="零因素的估计偏差"><figcaption>图4 · 零因素的估计偏差</figcaption></figure><figure><img src="figures/Fig5_interval_coverage.png" alt="区间覆盖率验证"><figcaption>图5 · 区间覆盖率验证</figcaption></figure><figure><img src="figures/Fig6_source_correction.png" alt="hub实现纠错与原基准结果"><figcaption>图6 · hub实现纠错与原基准结果</figcaption></figure><h2>English manuscript insertions</h2><div class="english"><h1>Draft manuscript text based on the executed supplementary experiments</h1>
+<p>Prepared 2026-09-16. These passages report measured computational results. Integrate subsection and figure numbers with the manuscript before submission. E5 is a corrected version of the original archive; original and corrected estimates must not be mixed in final tables. “Figure 1”–“Figure 6” below refer to the files in this package, not the manuscript's existing numbering.</p>
+<h2>Suggested framing for the introduction</h2>
+<p>Simulation-based content governance depends on choices about exposure intensity, delivery schedules, intervention coverage, and behavioral response. When these choices are bundled into categorical conditions, mechanism attribution may reflect both the named mechanism and the quantitative inputs assigned to it. We study this problem as an audit of governance evaluation: the objective is to distinguish contributions induced by the experimental design from contributions that persist under controlled exposure and alternative dynamics. The simulations do not estimate the persuasive capabilities of particular language models or establish the real-world effectiveness of disclosure or inoculation. Their contribution is a reproducible procedure for exposing the assumptions under which governance comparisons change.</p>
+<h2>Methods: supplementary experiment design</h2>
+<p>We extended the original study with four computational experiments. All agent-based and peer-averaging experiments used 1,000 agents,50 time steps, and 30 independent replication blocks. The first experiment independently crossed topology (BA, ER, WS, SBM), cumulative direct dose (0.05,0.50,0.95 events per agent), schedule (single-shot, five-step burst, continuous), and message strength (0.06,0.14,0.18), separately for opinion-reversion coefficients 0 and 0.05. This yielded 6,480 runs. Direct dose denotes exposure events rather than unique recipients; repeated direct exposures and endogenous second-hand exposure were retained as distinct quantities. Message strengths were treated as synthetic numerical inputs, without empirical AI-quality labels.</p>
+<p>The second experiment examined governance assumptions at strength 0.14, doses 0.05 and 0.50, and single-shot and continuous schedules across the four topologies. Fifteen primary configurations comprised no intervention; disclosure attenuation 0.30 or 0.70 with retained or lost second-hand labels; random or degree-targeted inoculation with target budgets 0.05 or 0.20 and compliance 0.50 or 1.00; and two combined policies pairing retained-label disclosure at 0.70 with either inoculation strategy at budget 0.05 and full compliance. Inoculation multiplied compliant agents' susceptibility by 0.20. The primary matrix comprised 7,200 runs;2,400 additional runs assessed the five hub-based policies using the archived selector. Comparisons of random and hub targeting matched target budgets and compliance. Disclosure and inoculation were not compared as equal-cost policies because their resource requirements were not represented in common units.</p>
+<p>The third experiment used independently implemented peer-averaging dynamics inspired by the anchored social-influence framework of Friedkin and Johnsen (1990). With row-normalized adjacency W, initial opinion x_i(0), exposure indicator e_i(t), stubbornness a, and external coupling β, the update was</p>
+<p><code>x_i(t+1)=a x_i(0)+(1−a)[(1−βe_i(t))Σ_jW_ijx_j(t)+βe_i(t)×0.6]</code>.</p>
+<p>We crossed a∈{0.20,0.80}, β∈{0.10,0.30}, the three direct doses, three schedules, and four topologies. The 4,320 exposed runs were paired with 240 no-input controls sharing the graph, initial opinions, and stubbornness. Outcomes were measured relative to the paired no-input trajectory, preventing spontaneous peer convergence from being attributed to the external message. This experiment tests a boundary across model families; it is not empirical external validation.</p>
+<p>We retained the original terminal outcomes and added the time average of population mean absolute displacement over the 50 post-update states. The original signed displacement is target-oriented: each agent's change is multiplied by sign(0.6−x_i(0)). Conversion is conditional on x_i(0)&lt;0. For the peer-averaging extension, absolute and signed changes use the no-input endpoint as the reference, while conversion is the difference between exposed and no-input conversion rates among initially negative agents.</p>
+<p>New random streams were deterministically derived from suite, topology, replication, and stream identifiers. Matched scenarios shared seed keys within a replication block; downstream random draws could diverge when interventions changed branching. Independent replication blocks, rather than individual agents or scenario cells, were the uncertainty unit. Paired differences were averaged over the remaining equally weighted design cells within each block and summarized using unadjusted 95% t intervals for the Monte Carlo mean. These intervals describe simulator precision, not empirical population uncertainty. Factor allocations used the complete-U estimator and 1,000 distinct-original-pair block resamples; the resulting percentile ranges are reported as sensitivity summaries rather than calibrated confidence intervals.</p>
+<h2>Methods: implementation audit and correction</h2>
+<p>Before interpreting the extensions, we replayed eight archived runs spanning all four topologies and two schedules. All checked scalar and trajectory outputs matched. We then identified an indexing defect in hub selection: positions in the graph-degree iteration were interpreted as agent IDs after SBM nodes had been relabelled. The corrected implementation ranks degree by explicit node ID, resolving ties by ascending ID, and makes zero budget or compliance a true no-op. As the tie rule can affect other topologies, all 40,320 archived hub runs were repeated with their original configurations and seeds. The other 80,640 rows were retained unchanged. The resulting 120,960-row corrected archive is versioned separately from the original and is not treated as additional independent evidence.</p>
+<h2>Results: separating direct dose from schedule</h2>
+<p>In the fully crossed design without reversion, dose received 70.57% of the complete-U allocation for terminal mean absolute displacement, compared with 0.21% for schedule,29.22% for strength, and 0.01% for topology(Figure 1). In contrast, with reversion 0.05, schedule received 44.14%, dose 39.40%, strength 16.46%, and topology 0.01%. These percentages are normalized within each new design and are not the fixed-benchmark quantities reported for the original archive.</p>
+<p>At fixed dose 0.50, continuous minus single-shot terminal displacement was−0.001794(Monte Carlo 95% interval:−0.001980 to−0.001607) without reversion, but+0.009608(0.009536 to 0.009680) with reversion. Thus a small schedule allocation in the memoryless benchmark does not imply a universal absence of timing effects. Temporal response and the observation window determine whether early or ongoing exposure produces the larger terminal change(Figure 2).</p>
+<p>Derived forward and reverse dose–schedule bundles from the same no-reversion response grid allocated 70.64% and 71.31%, respectively, to the schedule label. These are alternative design views rather than additional simulations. Their allocations demonstrate how a composite label can carry dose variation; they do not constitute a causal mediation decomposition or share an identical estimand with the full factorial game.</p>
+<h2>Results: governance comparisons conditional on exposure and implementation</h2>
+<p>At dose 0.50 under continuous seeding, hub targeting with a5% budget and full compliance reduced terminal absolute displacement by an additional 0.000504 relative to random targeting(95% Monte Carlo interval:0.000317 to 0.000691). At a20% budget, this difference was 0.000988(0.000762 to 0.001215). At dose 0.05, however, the corresponding 5%-budget difference was approximately 0.000005, with an interval spanning zero. The results therefore do not establish uniform hub superiority across exposure settings(Figure 3).</p>
+<p>In the same high-dose continuous condition, retaining labels during second-hand exposure produced an additional displacement reduction of 0.001429(0.001382 to 0.001476) at attenuation 0.30 and 0.002906(0.002799 to 0.003012) at attenuation 0.70. These differences quantify sensitivity to the assumed persistence of disclosure. Because disclosure and inoculation attenuate specified model components by construction, they cannot independently validate real-world policy effectiveness. Full policy-by-topology and alternative-outcome results are provided in the computational supplement.</p>
+<h2>Results: model-family and outcome boundaries</h2>
+<p>In the peer-averaging extension, schedule accounted for 60.55% and 60.42% of the full-design terminal allocation at stubbornness 0.20 and 0.80, respectively. Within fixed-dose games, the corresponding schedule shares ranged from 81.81% to 82.11%. Timing therefore remained consequential after direct-dose equalization in these dynamics.</p>
+<p>At stubbornness 0.20 and dose 0.50, continuous seeding increased terminal displacement relative to single-shot seeding by 0.004759(95% Monte Carlo interval:0.004698 to 0.004819), while decreasing time-averaged displacement by 0.000434(interval for the signed difference:−0.000463 to−0.000404). Terminal and cumulative outcomes answer different governance questions: an early perturbation can contribute more to the integrated trajectory while leaving a smaller residual at the terminal observation. The framework should detect such differences, rather than impose a common ranking across dynamics or outcomes.</p>
+<h2>Estimator validation under correlated noise</h2>
+<p>We evaluated the estimators on a balanced 2^4 design with cell mean 0.8A+0.5B+0.6AB+0.3C and true factor allocations(0.82,0.43,0.09,0). Four normal-noise covariance settings represented independent homoskedastic noise, independent heteroskedastic noise, heteroskedastic common shocks, and heteroskedastic structured shocks. Each setting used replication counts 10,30,60 and 1,000 datasets, yielding 12,000 datasets. For the first 500 datasets per setting,399 distinct-pair bootstrap resamples and delete-one-block jackknife-normal intervals were also evaluated. Dataset-level estimates, exact covariance matrices, bias Monte Carlo errors, interval widths, and coverage Wilson intervals are archived.</p>
+<p>For the null factor under structured correlated noise at R=30, the mean in-sample allocation was 0.014838, compared with 0.000313 for complete-U; the Monte Carlo standard error of the latter mean was 0.000475(Figure 4). Complete-U estimates were negative in 65.3% of these datasets. Such negative estimates were retained rather than truncated.</p>
+<p>Point correction did not ensure interval calibration. Across nonzero factors, empirical coverage of the nominal 95% distinct-pair percentile intervals ranged from 84.0% to 95.2%; for the null factor it ranged from 98.0% to 100.0%. Jackknife-normal coverage was also setting-dependent(Figure 5). Because each coverage estimate uses 500 datasets, its own Monte Carlo uncertainty must be considered. These findings support reporting the manuscript's allocation ranges as sensitivity summaries and do not establish a universally calibrated inferential procedure.</p>
+<p>For any symmetric allocation matrix H and independent replication vectors, the complete-U estimator is exactly <code>ȳᵀHȳ−tr(HS)/R</code>, where S is the full sample covariance using denominator R−1. Accordingly, an unregularized full-covariance noise-subtraction estimator is algebraically identical to complete-U and should not be presented as an independent competing method. Diagonal-only or regularized corrections require separate definitions and assumptions.</p>
+<h2>Results: effect of the hub correction on the original analysis</h2>
+<p>In two inspected SBM samples,47 and 46 of the 50 nodes selected by the archived procedure had degrees below the true top-50 cutoff. After correction, the mean selected degrees rose from 5.64 to 11.58 and from 6.14 to 11.64. The corrected baseline retained a dominant schedule allocation for mean absolute displacement:87.1689%, compared with 87.1760% originally(Figure 6). The corrected CS-0 schedule allocation was 0.0241654% of corrected baseline total variation, and its total retained variation was 4.9109%. Thus the central benchmark pattern persisted, although all downstream numerical reporting should use the corrected archive consistently.</p>
+<h2>Discussion and limitations</h2>
+<p>The supplementary experiments refine the contribution from a universal mechanism ranking to a conditional audit of simulation-based governance evidence. Independent crossing separates dose from schedule, governance stress tests expose reliance on label persistence and intervention reach, and alternative dynamics reveal settings in which timing remains important. The primary recommendation is to specify the intervention, exposure distribution, dynamics, and outcome window before interpreting factor importance.</p>
+<p>No observed platform diffusion, measured language-model performance, or participant responses were used to calibrate these experiments. Opinion displacement is not intrinsically a harm measure; a misinformation interpretation requires an explicitly hypothetical harmful-target scenario. The peer-averaging extension has a different response mechanism and scale from the original simulator. Monte Carlo intervals exclude uncertainty about the assumed behavioral parameters and do not adjust for multiple comparisons. The reported governance contrasts therefore support model auditing and hypothesis development, not empirical effectiveness or safety claims.</p>
+<h2>Figure captions</h2>
+<p><strong>Figure 1. Independent dose–schedule crossing.</strong> Complete-U allocations for terminal mean absolute displacement in E1, separately for reversion 0 and 0.05. Labels show allocation divided by the same design's total. Horizontal segments are 2.5th–97.5th percentile ranges from 1,000 distinct-original-pair replication-block resamples; these are sensitivity ranges, not calibrated confidence intervals, and some are smaller than the markers. Panels use different horizontal scales. Source: <code>E1_allocations.csv</code>.</p>
+<p><strong>Figure 2. Timing contrasts across dynamics and outcome windows.</strong> Continuous minus single-shot displacement at matched cumulative direct dose. Top panels show E1, averaged within each replication over topology and message strength; bottom panels show E3, averaged over topology and coupling. E3 outcomes are relative to paired no-input trajectories. Left panels use terminal displacement; right panels use the 50-step average of displacement. Whiskers are unadjusted 95% t intervals across 30 independent replication-block contrasts, describing Monte Carlo precision. Connecting lines are visual guides across the three tested doses. Source: <code>E1_schedule_contrasts.csv</code> and <code>E3_schedule_contrasts.csv</code>.</p>
+<p><strong>Figure 3. Matched governance comparisons.</strong> Top row: random minus hub terminal displacement under matched target budgets and compliance. Bottom row: lost-label minus retained-label displacement at matched disclosure attenuation. Positive values indicate lower terminal displacement for hub targeting or retained labels. Results average the four topologies equally within each replication. Whiskers show unadjusted 95% Monte Carlo t intervals over 30 blocks. Panel scales differ; the rows are separate comparisons and do not establish equal monetary costs across intervention types. Source: <code>E2_policy_contrasts.csv</code>.</p>
+<p><strong>Figure 4. Null-factor point estimation under four noise structures.</strong> Mean estimated Shapley allocation to factor D, whose true allocation is zero, over 1,000 datasets per setting. Whiskers show±1.96 Monte Carlo standard errors of the estimator mean, not confidence intervals for a single dataset's factor allocation. In-sample and complete-U estimates are paired within each dataset. Source: <code>E4_validation_summary.csv</code>.</p>
+<p><strong>Figure 5. Complete-U interval coverage.</strong> Empirical coverage percentages for distinct-pair percentile and jackknife-normal intervals, by factor, replication count, and noise setting. The nominal target is 95%; each cell uses 500 datasets. Colors encode coverage on a common 80%–100% scale, with numeric values shown. Monte Carlo standard errors, Wilson 95% intervals, and mean interval widths appear in the source table; high null-factor coverage should not be interpreted as exact calibration. Source: <code>E4_validation_summary.csv</code>.</p>
+<p><strong>Figure 6. Implementation audit and corrected benchmark attribution.</strong> Left: mean selected degree under the archived and corrected selectors for one archived single-shot seed per topology; this is an implementation diagnostic, not an across-seed effect estimate. Right: original and corrected complete-U allocation shares in C-D50 for mean total displacement, each divided by its own version's benchmark total. The plot shows point estimates; the corrected benchmark's bootstrap sensitivity ranges are reported separately. Sources: <code>hub_selector_audit.csv</code> and <code>E5_original_vs_corrected_allocations.csv</code>.</p>
+<h2>Reference to add if absent</h2>
+<p>Friedkin, N. E., &amp; Johnsen, E. C. (1990). Social influence and opinions. <em>The Journal of Mathematical Sociology,15</em>(3–4),193–206. <a href="https://doi.org/10.1080/0022250X.1990.9990069">https://doi.org/10.1080/0022250X.1990.9990069</a>.</p></div></main></html>

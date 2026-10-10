@@ -1,8 +1,8 @@
-# IP&M supplementary experiments — 2026-09-16
+# Computational experiments — 2026-09-16
 
 **阅读入口：[含图表的本地阅读版](实验结果报告_阅读版.html)，或[实验结果与修改建议](实验结果与修改建议.md)。英文论文段落：[MANUSCRIPT_INSERTIONS.md](MANUSCRIPT_INSERTIONS.md)。**
 
-This package contains executed supplementary simulations for *Auditing Assigned-Intensity Dependence in Social Simulation: A Design-Equalization Framework*, with the content-governance track as the intended thematic context. All numerical claims concern specified synthetic models. No real LLM, human-subject, or platform effectiveness experiment is included.
+This package contains executed supplementary simulations for *Auditing Assigned-Intensity Dependence in Social Simulation: A Design-Equalization Framework*, on mechanism attribution and content-governance simulation. All numerical claims concern specified synthetic models. No real LLM, human-subject, or platform effectiveness experiment is included.
 
 ## What was executed
 
@@ -44,7 +44,7 @@ The execution environment was Python 3.13.7 on Windows, NumPy 2.2.6, pandas 2.3.
 From PowerShell in this package directory, create a **new sibling directory** and reproduce everything with:
 
 ```powershell
-D:/python/python.exe code/reproduce.py --destination ../ipm_reproduced_20260916 --workers 6
+D:/python/python.exe code/reproduce.py --destination ../reproduced_simulations_20260916 --workers 6
 ```
 
 The destination must not already exist. This copies the required code and inputs, verifies eight historical runs, executes E1–E5, recreates analysis tables and figures, then runs validation tests. It does not delete or overwrite the delivered folder. Runtime depends on the machine; the graph cache and six worker processes reduce repeated network generation. Recorded execution times include CSV compression and should not be used as a hardware-independent performance benchmark.
@@ -82,7 +82,3 @@ Eight historical sample replays passed; new matrices have exact expected IDs and
 The entire computational reproduction was also executed successfully in an independent directory using only the packaged input snapshot. All 27 result CSV/CSV.gz files, including stored trajectory strings, matched the first execution (numeric tolerance rtol=1e-12, atol=1e-14); all ten tests passed again. See `validation/final_validation.json` and `validation/reproduction_console.log`.
 
 Figures were visually inspected after rendering, and the HTML reading copy was checked in a local headless browser. A final validation record and file manifest accompany the package. The original Word manuscript has not been overwritten. The supplied English passages still need integration with the manuscript's numbering and references. `code/build_reading_copy.py` rebuilds the optional HTML reading copy using Markdown 3.9; it is separate from the numerical pipeline.
-
-## Thematic scope and submission route
-
-The official IP&MC2026 track page lists “Trustworthy Content Governance and Safe Generative AI in the Age of Large Language Models”. On the date checked, the track page listed 31 July 2026 for the conference deadline, while the participation page advertised late-breaking posters. An independent currently open journal route was not established from those pages. See the [official track page](https://www.elsevier.com/events/conferences/all/information-processing-and-management-conference/track-title) and [participation page](https://www.elsevier.com/events/conferences/all/information-processing-and-management-conference/participate).

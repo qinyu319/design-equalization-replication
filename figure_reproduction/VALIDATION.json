@@ -15,14 +15,14 @@
   "minimum_normal_lettering_pt": 8,
   "documents": [
     {
-      "file": "IPM_Artwork_Revised_Anonymous_Manuscript.docx",
+      "file": "Artwork_Revised_Anonymous_Manuscript.docx",
       "sha256": "e97751dae71ee3240b54b250bd4d5247da32d0a7b499ffefd92b0e33482c5410",
       "figures": 7,
       "tables": 2,
       "equations": 22
     },
     {
-      "file": "IPM_Artwork_Revised_Supplementary_Material.docx",
+      "file": "Artwork_Revised_Supplementary_Material.docx",
       "sha256": "280cfc2f85abd894643df3414ed89f5c5851d530b85e9795054035b41e19d4fe",
       "figures": 5,
       "tables": 10,
@@ -131,5 +131,6 @@
     ],
     "grayscale_findings": "Markers, line patterns, numeric coverage labels and interval borders remain readable. Figure 7 direction is recoverable from the printed coverage numbers in grayscale.",
     "limitations": "No separate color-vision-deficiency simulation performed."
-  }
+  },
+  "document_label_note": "Document names are normalized descriptive labels; original document content hashes and historical validation results are retained."
 }

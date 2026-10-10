@@ -1,4 +1,4 @@
-"""Reproduce revised IP&M artwork from archived simulation results.
+"""Reproduce the paper artwork from archived simulation results.
 
 python plot_all_figures.py
 python plot_all_figures.py --figures 3 7 --formats pdf eps png --dpi 600

@@ -1,4 +1,4 @@
-# Design equalization in content-governance simulations
+# Design Equalization for Auditing Mechanism Claims in Content Governance Simulations
 
 Reproducibility materials for **Design Equalization for Auditing Mechanism Claims in Content Governance Simulations**, corresponding to the manuscript revision dated **20 September 2026**.
 
@@ -9,10 +9,10 @@ This repository includes the complete computational archive, source code, run-le
 Use Python 3.13 for the computational environment recorded in the original package (Python 3.13.7). Create and activate a virtual environment, then run from this repository's root:
 
 ```bash
-python -m pip install -r ipm_experiments_20260916/requirements-experiments.txt
+python -m pip install -r experiments/requirements-experiments.txt
 python tools/verify_integrity.py
-python final_audit/code/audit_numerical_claims.py --results-dir ipm_experiments_20260916/results
-python -m pytest ipm_experiments_20260916/code/test_experiments.py -q
+python final_audit/code/audit_numerical_claims.py --results-dir experiments/results
+python -m pytest experiments/code/test_experiments.py -q
 ```
 
 The independent audit recomputes **400 numerical comparisons** from the supplied records. It does not rerun simulations. It writes its check records to `final_audit/audit/`.
@@ -30,20 +30,20 @@ The figure package has its own recorded requirements in `figure_reproduction/req
 To rerun E1–E5 from the packaged inputs, use a **new, nonexistent destination**:
 
 ```bash
-python ipm_experiments_20260916/code/reproduce.py --destination ../ipm_reproduced_20260920 --workers 6
+python experiments/code/reproduce.py --destination ../reproduced_simulations_20260920 --workers 6
 ```
 
-This is computationally intensive. It performs archive replay, runs the experiments, reconstructs results and figures, and executes verification checks. It does not require an LLM service. See the archived [computational README](ipm_experiments_20260916/README.md) and [model specification](ipm_experiments_20260916/MODEL_SPECIFICATION.md) for details.
+This is computationally intensive. It performs archive replay, runs the experiments, reconstructs results and figures, and executes verification checks. It does not require an LLM service. See the archived [computational README](experiments/README.md) and [model specification](experiments/MODEL_SPECIFICATION.md) for details.
 
 ## Repository map
 
 | Directory | Contents |
 |---|---|
-| `ipm_experiments_20260916/code/` | Simulation, estimation, analysis, reproduction and tests |
-| `ipm_experiments_20260916/frozen/` | Frozen original model and estimator snapshots |
-| `ipm_experiments_20260916/inputs/` | Design matrices, configurations, seeds and historical input archive |
-| `ipm_experiments_20260916/results/` | Corrected archive and E1–E4 run-level and summary outputs |
-| `ipm_experiments_20260916/validation/` | Historical replay and verification records |
+| `experiments/code/` | Simulation, estimation, analysis, reproduction and tests |
+| `experiments/frozen/` | Frozen original model and estimator snapshots |
+| `experiments/inputs/` | Design matrices, configurations, seeds and historical input archive |
+| `experiments/results/` | Corrected archive and E1–E4 run-level and summary outputs |
+| `experiments/validation/` | Historical replay and verification records |
 | `figure_reproduction/` | Current Figures 1–7 and S1–S5, source tables and Python code |
 | `final_audit/` | Independent numerical checks and retained results |
 | `table_source/` | Source of Supplementary Table S5b added on 20 September |
@@ -72,10 +72,12 @@ E1–E3 total 20,640 evaluations, including controls and sensitivity runs. E5 re
 
 ## Versions and provenance
 
-The `ipm_experiments_20260916/` directory is the complete computational archive embedded in the 20 September submission package. Its historical title, manuscript insertion suggestions and earlier figure numbers are retained as provenance. The title above and the `figure_reproduction/` directory identify the current IPM manuscript version. The 20 September revision did not generate new simulation runs.
+The `experiments/` directory contains the computational archive supporting the paper. Its earlier title, manuscript development notes and experiment figure numbering are retained as research provenance. The `figure_reproduction/` directory corresponds to the manuscript revision dated 20 September 2026; that revision did not generate new simulation runs.
 
-The historical uncorrected input is `ipm_experiments_20260916/inputs/archive_reference/data/combined_runs_120960.csv.gz`; the corrected analysis archive is `ipm_experiments_20260916/results/E5_corrected_archive_120960.csv.gz`.
+The 10 October 2026 maintenance release standardizes the repository around the paper: documentation and paths use research-oriented names, venue-specific administrative material is removed, and the reading report is rebuilt. Data files, model parameters, recorded seeds and numerical results are unchanged. The original randomization namespace is retained byte-for-byte as an explicitly documented hexadecimal compatibility constant, preserving exact replay.
 
-All 208 source files were copied without changes and verified against source-package hashes. Details are recorded in `provenance/publication_sources.json`. The source submission manifest also lists submission documents that are intentionally outside this data-and-code repository.
+The historical uncorrected input is `experiments/inputs/archive_reference/data/combined_runs_120960.csv.gz`; the corrected analysis archive is `experiments/results/E5_corrected_archive_120960.csv.gz`.
 
-The root `MANIFEST_SHA256.json` covers this public snapshot. Git line-ending conversion is disabled to preserve file hashes. The repository does not require Git LFS; compressed input and result tables are included as ordinary Git files.
+At the initial publication, all 208 source files matched the source-package hashes. `provenance/publication_sources.json` now distinguishes original source hashes from current hashes and records presentation edits. `provenance/source_package_manifest_20260920.json` retains the historical package inventory with normalized document labels; its source hashes remain unchanged. Those historical hashes are not the current-file integrity manifest.
+
+The root `MANIFEST_SHA256.json` covers this public snapshot; run the integrity check before commands that regenerate derived outputs. Git line-ending conversion is disabled to preserve file hashes. The repository does not require Git LFS; compressed input and result tables are included as ordinary Git files.

@@ -203,7 +203,8 @@
     }
   ],
   "visual_inspection": "All six rendered PNGs inspected; labels, axes, legends and numeric source scales checked.",
-  "full_reproduction_directory": "D:\\202608\\投稿到INFORMATION PROCESSING & MANAGEMENT\\.review\\ipm_reproduction_check_20260916",
+  "full_reproduction_directory": "<local-reproduction-directory>",
   "numeric_rtol": 1e-12,
-  "numeric_atol": 1e-14
+  "numeric_atol": 1e-14,
+  "path_note": "Machine-specific source locations are replaced with descriptive labels; recorded verification results and source hashes are unchanged."
 }

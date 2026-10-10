@@ -1,4 +1,4 @@
-"""Reproduce all 12 figures in the expanded IP&M manuscript.
+"""Reproduce all 12 figures in the research manuscript.
 
 Run: python plot_all_figures.py
 Use --help for individual figures, paths, formats and resolution.

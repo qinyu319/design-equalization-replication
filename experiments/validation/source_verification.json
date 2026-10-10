@@ -1,5 +1,5 @@
 {
-  "source_root": "D:\\第三篇小论文政策评论\\投稿Social Science Computer Review\\sscr-design-equalization-replication",
+  "source_root": "<historical-source-workspace>",
   "original_model_sha256": "a11c39354fef4c37a10665eb7b8f16e3438c856379760a5b7514c7279a77f331",
   "frozen_estimator_sha256": "00d0b9db45ff8cdd7c1558129d589988b628e5ab22785aff99659dbbf57a67a7",
   "original_archive_sha256": "21ab14ffa0136c0cef0a4efee4bfcc369bf3c925221127c69591a9695f09f6ed",
@@ -138,5 +138,6 @@
     "matplotlib": "3.10.6",
     "yaml": "6.0.3"
   },
-  "protocol_sha256": "3c9a4ae3f267bde0ee091841706f56a59a7537656b2eb1e56228311bc24dc209"
+  "protocol_sha256": "3c9a4ae3f267bde0ee091841706f56a59a7537656b2eb1e56228311bc24dc209",
+  "path_note": "Machine-specific source locations are replaced with descriptive labels; recorded verification results and source hashes are unchanged."
 }

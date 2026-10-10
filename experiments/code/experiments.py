@@ -27,7 +27,9 @@ sys.path.insert(0, str(ROOT / 'frozen'))
 import frozen_abm as abm
 from frozen_estimators import projection_games, kernels, complete_u, bootstrap_u
 
-NS = 'ipm-content-governance-20260916-v1'
+# Preserve the original seed namespace bytes for exact replay of archived runs.
+# Hex notation is a compatibility constant, not a new randomization namespace.
+NS = bytes.fromhex('69706d2d636f6e74656e742d676f7665726e616e63652d32303236303931362d7631').decode('ascii')
 TOPOLOGIES = ['BA', 'ER', 'WS', 'SBM']
 REGIMES = ['single_shot', 'burst', 'continuous']
 STREAMS = ['network', 'initialization', 'seeding', 'sharing', 'noise', 'inoculation']

@@ -1,4 +1,4 @@
-# IPM 修订图表与 Python 复现包
+# 论文图表与 Python 复现包
 
 本包生成主文 Figure 1–7 和补充材料 Figure S1–S5。输入来自已经核验的仿真结果，不运行新实验，也不连接网络。
 
@@ -27,7 +27,7 @@ python plot_all_figures.py --formats pdf eps --output-dir output_vector
 
 ## 文件与用途
 
-- `figures/*.pdf` 和 `figures/*.eps`：投稿用矢量图。每张宽6.5英寸，包含字体；图7的色块和色标也保留为矢量元素。
+- `figures/*.pdf` 和 `figures/*.eps`：论文用矢量图。每张宽6.5英寸，包含字体；图7的色块和色标也保留为矢量元素。
 - `figures/*.png`：600 dpi、3900像素宽的论文阅读用图，已嵌入本次Word版本。
 - `figures/*.svg`：便于继续编辑的矢量副本。
 - `figures/*_source.csv`：每张图对应的数值与筛选范围。图1为概念说明记录，不是观测数据。
@@ -55,4 +55,4 @@ python plot_all_figures.py --formats pdf eps --output-dir output_vector
 
 本版按Word的6.5英寸插图宽度设计，普通图中文字至少8 pt，数学上标按数学排版缩小。Arial为主要字体，数学符号由数学字体排版。如果排版人员改变图片宽度，应同时复查最终字号。
 
-投稿时建议上传各图的PDF或EPS文件。PNG用于Word阅读，不作为纯线图满足1000 dpi要求的替代声明。依据：[Elsevier图形格式](https://www.elsevier.com/about/policies-and-standards/author/artwork-and-media-instructions/artwork-formats-checklist)、[图形尺寸](https://www.elsevier.com/about/policies-and-standards/author/artwork-and-media-instructions/artwork-sizing)。
+论文排版和共享建议使用 PDF 或 EPS 矢量文件；PNG 用于屏幕阅读和文档预览。缩放图片时请检查最终字号与线条清晰度。

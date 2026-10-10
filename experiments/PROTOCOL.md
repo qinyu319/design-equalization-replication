@@ -1,16 +1,12 @@
-# Supplementary simulation protocol for the IPM content governance submission
+# Supplementary simulation protocol for content-governance research
 
 Protocol prepared on 2026-09-16 before executing the new experiment matrix. This is a locally timestamped prospective extension, not external preregistration. The earlier frozen archive remains unchanged. Its historical instruction to add no further ABM runs applied to that earlier analysis, not to this separately versioned extension authorized by the author.
 
+Presentation note (2026-10-10): administrative venue references were removed and the seed namespace notation was clarified. Experiment settings, decision rules and the original protocol date are unchanged.
+
 ## Purpose and evidentiary scope
 
-Audit whether mechanism attribution and simulated intervention comparisons depend on assigned exposure, intervention coverage, attenuation, and model dynamics. The target call is Trustworthy Content Governance and Safe Generative AI in the Age of Large Language Models. These simulations concern the evaluation of governance assumptions; they do not measure actual LLM safety, misinformation detection accuracy, real persuasion, or policy effectiveness. Message strength and susceptibility parameters are synthetic assumptions, not empirical estimates of high/low AI quality. Opinion movement is not intrinsically harm. A harmful-target interpretation requires the explicitly hypothetical assumption that the seeded target is undesirable misinformation.
-
-Official sources checked 2026-09-16:
-- https://www.elsevier.com/events/conferences/all/information-processing-and-management-conference/track-title
-- https://www.elsevier.com/events/conferences/all/information-processing-and-management-conference/participate
-
-The call is linked to IP&MC2026. The track page lists 31 July 2026 as the conference deadline; the participation page currently advertises late-breaking posters. A separate open journal submission route is not established by these pages.
+Audit whether mechanism attribution and simulated intervention comparisons depend on assigned exposure, intervention coverage, attenuation, and model dynamics. These simulations concern the evaluation of governance assumptions; they do not measure actual LLM safety, misinformation detection accuracy, real persuasion, or policy effectiveness. Message strength and susceptibility parameters are synthetic assumptions, not empirical estimates of high/low AI quality. Opinion movement is not intrinsically harm. A harmful-target interpretation requires the explicitly hypothetical assumption that the seeded target is undesirable misinformation.
 
 ## Frozen inputs and verification
 
@@ -44,7 +40,7 @@ Truth on a balanced 2^4 grid: mu=0.8A+0.5B+0.6AB+0.3C. Shapley allocations A=.82
 
 ## Randomization and analysis
 
-New seeds use the namespace ipm-content-governance-20260916-v1 and SHA-256. Exclude intervention/dose/strength labels from selected within-block seed keys to preserve pairing, and include experiment, topology and replication to separate independent blocks. Distinct random streams are used for initialization, network, direct seeding, sharing, noise and intervention targeting. Stream alignment can diverge after intervention-dependent branching; pairing does not imply every downstream event remains identical. Record every seed.
+New seeds use SHA-256 and the fixed legacy namespace encoded by `NS` in `code/experiments.py`. The hexadecimal compatibility constant preserves the original bytes and every recorded seed. Exclude intervention/dose/strength labels from selected within-block seed keys to preserve pairing, and include experiment, topology and replication to separate independent blocks. Distinct random streams are used for initialization, network, direct seeding, sharing, noise and intervention targeting. Stream alignment can diverge after intervention-dependent branching; pairing does not imply every downstream event remains identical. Record every seed.
 
 Use independent replication blocks as the uncertainty unit, never the nominal number of agents or cells. For raw mean differences, report paired t intervals as Monte Carlo precision summaries over 30 simulation blocks; these do not measure empirical uncertainty or control familywise error. For complete-U allocations retain signed estimates and use 1,000 distinct-pair block bootstrap percentile ranges as sensitivity summaries, not calibrated confidence intervals. Suppress ratios with nonpositive denominators. New equal-weight factorial designs define new estimands: do not merge their allocations with the old benchmark without an explicit denominator definition.
 

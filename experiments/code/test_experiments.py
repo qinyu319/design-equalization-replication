@@ -116,3 +116,16 @@ def test_cached_network_and_archived_new_runs_replay():
             stored=data.loc[task['run_id']]
             for key in ['mean_total_shift','mean_signed_shift','conversion_rate','mean_trajectory_shift']:
                 np.testing.assert_allclose(result[key],stored[key],atol=1e-12,rtol=1e-10)
+
+
+def test_seed_namespace_matches_archived_manifests():
+    from experiments import ROOT
+    for suite in ['E1', 'E2', 'E3']:
+        records = pd.read_csv(ROOT / 'results' / f'{suite}_seed_manifest.csv')
+        columns = ['topology', 'replication', 'master_seed', 'seed_net',
+                   'seed_attr', 'seed_seeding', 'seed_sharing', 'seed_noise', 'seed_inoc']
+        records = records[columns].drop_duplicates()
+        for row in records.itertuples(index=False):
+            actual = seeds_for(suite, row.topology, row.replication)
+            for name in columns[2:]:
+                assert actual[name] == getattr(row, name), (suite, row.topology, row.replication, name)
